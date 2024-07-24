@@ -16,7 +16,10 @@
 node_modules
 
 # compiled output
+build
 dist
+cache
+.cache
 
 # log and lock files
 *.log
