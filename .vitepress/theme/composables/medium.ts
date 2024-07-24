@@ -1,6 +1,6 @@
 import type { Router } from 'vitepress'
 import type { App, InjectionKey } from 'vue'
-import { inject, watch } from 'vue'
+import { watch } from 'vue'
 import type { Zoom } from 'medium-zoom'
 import mediumZoom from "medium-zoom";
 declare module 'medium-zoom' {
