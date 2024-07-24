@@ -13,6 +13,19 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+node_modules
+
+# compiled output
+dist
+
+# log and lock files
+*.log
+yarn.lock
+package-lock.json
+
+# editor directories and files
 .idea/
 .vscode/
-node_modules
+
+# misc
+.DS_Store

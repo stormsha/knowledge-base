@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "stormsha"
   text: "知识库"
-  tagline: My great project tagline
+  tagline: 每一次点击，都是知识的积累
   image:
     src: /logo.png
     alt: 知识库
