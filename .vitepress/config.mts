@@ -2,6 +2,7 @@ import {defineConfig} from 'vitepress'
 import nav from "./config/nav.js";
 
 // https://vitepress.dev/reference/site-config
+//noinspection all
 export default defineConfig({
     title: "stormsha",
     description: "知识库",

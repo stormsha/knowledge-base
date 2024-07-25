@@ -1,7 +1,7 @@
 
 import DefaultTheme from 'vitepress/theme'
-import {EnhanceAppContext} from "vitepress";
-import {watch} from "vue";
+import {EnhanceAppContext, useData} from "vitepress";
+import {h, watch} from "vue";
 import {useMediumZoomProvider} from "./composables/medium";
 
 import './styles/index.css'
@@ -27,6 +27,16 @@ function updateHomeStyle(value: boolean) {
 
 export default {
     extends: DefaultTheme,
+    Layout:()=>{
+        const props: Record<string, any> = {}
+        //noinspection all
+        const { frontmatter } =  useData();
+        /* 添加自定义class */
+        if (frontmatter.value?.layoutClass) {
+            props.class = frontmatter.value.layoutClass;
+        }
+        return h(DefaultTheme.Layout, props)
+    },
     enhanceApp({app, router}: EnhanceAppContext){
         useMediumZoomProvider(app, router)
         if (typeof window !== 'undefined') {
