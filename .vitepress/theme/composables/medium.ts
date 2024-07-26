@@ -15,6 +15,7 @@ export const mediumZoomSymbol: InjectionKey<Zoom> = Symbol('medium-zoom')
 
 
 export const useMediumZoomProvider = (app: App|any, router: Router) => {
+    //@ts-ignore
     if (import.meta.env.SSR) {
         return
     }
