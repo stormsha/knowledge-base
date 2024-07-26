@@ -3,3 +3,4 @@
 @import './vitepress.scss';
 @import 'medium.scss';
 @import './home.css';
+@import './tailwind.scss';
