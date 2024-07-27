@@ -15,7 +15,7 @@ export default defineConfig({
             lineNumbers: true,
         },
         nav: nav,
-        logo: '/logo.png',
+        logo: '/logo.svg',
         sidebar: [
             {
                 text: 'Examples',

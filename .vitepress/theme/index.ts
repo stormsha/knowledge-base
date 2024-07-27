@@ -5,6 +5,7 @@ import {h, watch} from "vue";
 import {useMediumZoomProvider} from "./composables/medium";
 
 import './styles/index.css'
+import MLayout from "./components/MLayout.vue";
 
 let homeStyle: HTMLStyleElement | undefined
 function updateHomeStyle(value: boolean) {
@@ -35,7 +36,7 @@ export default {
         if (frontmatter.value?.layoutClass) {
             props.class = frontmatter.value.layoutClass;
         }
-        return h(DefaultTheme.Layout, props)
+        return h(MLayout, props)
     },
     enhanceApp({app, router}: EnhanceAppContext){
         useMediumZoomProvider(app, router)

@@ -3,6 +3,10 @@
     transition: transform 59s 1s cubic-bezier(0.3, 0, 0.8, 1);
 }
 
+.home-layout .image-src {
+    fill: red;
+}
+
 .home-layout .details small {
     opacity: 0.8;
 }
