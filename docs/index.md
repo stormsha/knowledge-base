@@ -4,12 +4,9 @@ layout: home
 layoutClass: 'home-layout'
 
 hero:
-  name: "stormsha"
-  text: "知识库"
+  name: "沙包"
+  text: "个人知识库"
   tagline: 每一次点击，都是知识的积累
-#  image:
-#    src: /home-hero-image.svg
-#    alt: 知识库
   actions:
     - text: 个人主页
       link: https://stormsha.com

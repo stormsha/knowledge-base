@@ -1,11 +1,13 @@
 import {defineConfig} from 'vitepress'
-import nav from "./config/nav.js";
+// import { head, nav } from './configs'
+import {head, nav} from "./configs";
 
 // https://vitepress.dev/reference/site-config
 //noinspection all
 export default defineConfig({
     title: "stormsha",
     description: "知识库",
+    head: head,
     srcDir: 'docs',
     outDir: '../dist',
     lang: 'zh-CN',
