@@ -21,12 +21,17 @@
   color: var(--vp-c-brand-1);
 }
 
+.link-text,
 .link.active,
 .link.active span,
 .VPNavBarMenuLink:hover span,
 .VPSidebarItem.is-active .link,
 .VPSidebar .link:hover {
   color: var(--vp-c-brand-1);
+}
+
+.link.active {
+  border-color: var(--vp-c-brand-1);
 }
 
 .vp-doc a:hover,
@@ -37,4 +42,21 @@
 /* Transition by color instead of opacity */
 .dark .vp-doc .custom-block a {
   transition: color 0.25s;
+}
+
+/* dark/light radial transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root),
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root),
+.dark::view-transition-old(root) {
+  z-index: 9999;
 }

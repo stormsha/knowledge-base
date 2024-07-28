@@ -1,6 +1,6 @@
 import {defineConfig} from 'vitepress'
 // import { head, nav } from './configs'
-import {head, nav} from "./configs";
+import {head, nav, sidebar} from "./configs";
 
 // https://vitepress.dev/reference/site-config
 //noinspection all
@@ -17,23 +17,15 @@ export default defineConfig({
             lineNumbers: true,
         },
         nav: nav,
+        sidebar: sidebar,
         logo: '/logo.svg',
-        sidebar: [
-            {
-                text: 'Examples',
-                items: [
-                    {text: 'Markdown Examples', link: '/markdown-examples'},
-                    {text: 'Runtime API Examples', link: '/api-examples'}
-                ]
-            }
-        ],
         /* 右侧大纲配置 */
         outline: {
             level: 'deep',
             label: '目录',
         },
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+            {icon: 'github', link: 'https://github.com/stormsha/knowledge-base'}
         ]
     }
 })

@@ -1,9 +1,9 @@
-.home-layout .heroImage:hover {
+.home-layout .image-src:hover {
     transform: translate(-50%, -50%) rotate(666turn);
     transition: transform 59s 1s cubic-bezier(0.3, 0, 0.8, 1);
 }
 
-.home-layout .heroImage {
+.home-layout .image-src {
     z-index: 1000;
 }
 

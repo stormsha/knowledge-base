@@ -6,6 +6,7 @@ import {useMediumZoomProvider} from "./composables/medium";
 
 import './styles/index.css'
 import MLayout from "./components/MLayout.vue";
+import MNavLinks from "./components/MNavLinks.vue";
 
 let homeStyle: HTMLStyleElement | undefined
 function updateHomeStyle(value: boolean) {
@@ -40,6 +41,7 @@ export default {
     },
     enhanceApp({app, router}: EnhanceAppContext){
         useMediumZoomProvider(app, router)
+        app.component('MNavLinks', MNavLinks)
         if (typeof window !== 'undefined') {
             watch(
                 () => router.route.data.relativePath,
