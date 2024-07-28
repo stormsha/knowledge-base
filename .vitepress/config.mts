@@ -1,6 +1,6 @@
 import {defineConfig} from 'vitepress'
 // import { head, nav } from './configs'
-import {head, nav, sidebar} from "./configs";
+import {head, nav, sidebar, algolia} from "./configs";
 
 // https://vitepress.dev/reference/site-config
 //noinspection all
@@ -9,7 +9,7 @@ export default defineConfig({
     description: "知识库",
     head: head,
     srcDir: 'docs',
-    outDir: '../dist',
+    outDir: './dist',
     lang: 'zh-CN',
     themeConfig: {
         i18nRouting: false,
@@ -18,6 +18,7 @@ export default defineConfig({
         },
         nav: nav,
         sidebar: sidebar,
+        // algolia: algolia,
         logo: '/logo.svg',
         /* 右侧大纲配置 */
         outline: {
@@ -26,6 +27,7 @@ export default defineConfig({
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/stormsha/knowledge-base'}
-        ]
+        ],
+        // 设置搜索框的样式
     }
 })
