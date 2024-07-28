@@ -26,4 +26,8 @@ features:
     link: /自学路线图/
     details: 高效的工具
     linkText: 成长
+  - title: 📚 技术文档
+    link: /技术文档/
+    details: 高效的工具
+    linkText: 成长
 ---

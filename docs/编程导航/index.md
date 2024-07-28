@@ -6,7 +6,7 @@ outline: [2, 3, 4]
 <script setup>
 import { WIZARDS_DATA } from './data'
 </script>
-<style src="./index.scss"></style>
+<style src="../styles/index.scss"></style>
 
 # 编程导航
 

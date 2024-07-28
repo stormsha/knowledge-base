@@ -1,4 +1,4 @@
-export interface WIZARD {
+export interface NAV_LINK {
   /** 站点图标 */
   icon?: string | { svg: string }
   /** 站点名称 */
@@ -7,4 +7,9 @@ export interface WIZARD {
   desc?: string
   /** 站点链接 */
   link: string
+}
+
+export interface WIZARDS {
+  title: string
+  items: NAV_LINK[]
 }

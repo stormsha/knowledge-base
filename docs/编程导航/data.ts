@@ -1,10 +1,4 @@
-import {WIZARD} from "../../.vitepress/theme/types";
-
-
-type WIZARDS = {
-    title: string
-    items: WIZARD[]
-}
+import {WIZARDS} from "../../.vitepress/theme/types";
 
 export const WIZARDS_DATA: WIZARDS[] = [
     {

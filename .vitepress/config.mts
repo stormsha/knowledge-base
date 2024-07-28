@@ -1,5 +1,4 @@
 import {defineConfig} from 'vitepress'
-// import { head, nav } from './configs'
 import {head, nav, sidebar, algolia} from "./configs";
 
 // https://vitepress.dev/reference/site-config
@@ -40,6 +39,10 @@ export default defineConfig({
             prev: '上一篇',
             next: '下一篇',
         },
+        footer: {
+            message: '<a href="https://github.com/stormsha/knowledge-base/" target="_blank">源码地址</a> | <a href="https://www.devsroad.com/sitemap.xml" target="_blank">站点地图</a>',
+            copyright: 'Copyright © 2024-present stormsha'
+        },
         socialLinks: [
             {
                 icon: {
@@ -60,10 +63,6 @@ export default defineConfig({
                 },
                 link: 'https://space.bilibili.com/97235284'
             }
-        ],
-        footer: {
-            message: '<a href="https://github.com/stormsha/knowledge-base/" target="_blank">源码地址</a> | <a href="https://www.devsroad.com/sitemap.xml" target="_blank">站点地图</a>',
-            copyright: 'Copyright © 2024-present stormsha'
-        }
+        ]
     }
 })
