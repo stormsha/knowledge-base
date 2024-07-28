@@ -5,7 +5,7 @@ layoutClass: 'home-layout'
 
 hero:
   name: "沙包"
-  text: "个人知识库"
+  text: "个人知识库111"
   tagline: 每一次点击，都是知识的积累
   actions:
     - text: 知识星球
