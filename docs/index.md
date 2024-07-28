@@ -22,12 +22,8 @@ features:
     link: /编程导航/
     details: 高效的工具
     linkText: 推荐
-  - title: 🐕 Java 学习路线
-    link: /Java 学习路线/
-    details: 高效的工具
-    linkText: 成长
-  - title: 🐕 Golang 学习路线
-    link: /Golang 学习路线/
+  - title: 📚 自学路线图
+    link: /自学路线图/
     details: 高效的工具
     linkText: 成长
 ---
