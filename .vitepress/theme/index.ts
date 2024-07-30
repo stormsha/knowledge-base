@@ -56,7 +56,7 @@ export default {
 
     enhanceApp({app, router}: EnhanceAppContext) {
         useMediumZoomProvider(app, router)
-        app.component("MNavLinks", MNavLinks)
+        app.component('MNavLinks', MNavLinks)
         if (typeof window !== 'undefined') {
             watch(
                 () => router.route.data.relativePath,
