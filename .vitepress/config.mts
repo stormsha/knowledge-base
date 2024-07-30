@@ -20,7 +20,7 @@ export default defineConfig({
         },
         nav: nav,
         sidebar: sidebar,
-        // algolia: algolia,
+        algolia: algolia,
         logo: '/logo.svg',
         /* 右侧大纲配置 */
         outline: {
