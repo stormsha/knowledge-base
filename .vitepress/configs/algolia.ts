@@ -1,9 +1,10 @@
 import type { DefaultTheme } from 'vitepress'
-
+// https://crawler.algolia.com/admin/crawlers/?sort=status&order=ASC&limit=20&appId=6P12E2JNJY
+//noinspection all
 export const algolia: DefaultTheme.AlgoliaSearchOptions = {
-    appId: 'ONAITTOY3Z',
-    apiKey: '449b74fb53e8d87e2e78ee53fc806050',
-    indexName: 'knowledge-base',
+    appId: '6P12E2JNJY',
+    apiKey: '06a1d55a809236e412237000854caaf7',
+    indexName: 'devsroad',
     placeholder: '搜索',
     translations: {
         button: {
