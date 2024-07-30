@@ -10,9 +10,22 @@ export default defineConfig({
     srcDir: 'docs',
     outDir: './dist',
     lang: 'zh-CN',
+    vite: {
+        optimizeDeps: {
+            exclude: [
+                '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+            ],
+        },
+        ssr: {
+            noExternal: [
+                '@nolebase/vitepress-plugin-enhanced-readabilities',
+            ],
+        },
+    },
     sitemap: {
         hostname: 'https://www.devsroad.com/'
     },
+    ignoreDeadLinks: true,
     themeConfig: {
         i18nRouting: false,
         markdown: {
@@ -64,5 +77,5 @@ export default defineConfig({
                 link: 'https://space.bilibili.com/97235284'
             }
         ]
-    }
+    },
 })

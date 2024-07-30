@@ -16,3 +16,7 @@
     margin-top: 2em;
     text-align: right;
 }
+
+.VPSocialLinks.VPNavBarSocialLinks.social-links {
+    margin-right: 0;
+}
