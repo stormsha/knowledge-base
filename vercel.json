@@ -9,11 +9,5 @@
         }
       ]
     }
-  ],
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vitejs/vercel-adapter"
-    }
   ]
 }

@@ -4,12 +4,6 @@ import {head, nav, sidebar, algolia} from "./configs";
 // https://vitepress.dev/reference/site-config
 //noinspection all
 export default defineConfig({
-    title: "stormsha",
-    description: "知识库",
-    head: head,
-    srcDir: 'docs',
-    outDir: './dist',
-    lang: 'zh-CN',
     vite: {
         optimizeDeps: {
             exclude: [
@@ -19,9 +13,16 @@ export default defineConfig({
         ssr: {
             noExternal: [
                 '@nolebase/vitepress-plugin-enhanced-readabilities',
+                '@nolebase/ui',
             ],
         },
     },
+    title: "stormsha",
+    description: "知识库",
+    head: head,
+    srcDir: 'docs',
+    outDir: './dist',
+    lang: 'zh-CN',
     sitemap: {
         hostname: 'https://www.devsroad.com/'
     },
