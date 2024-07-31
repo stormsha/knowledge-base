@@ -1,0 +1,3 @@
+# Golang 学习路线
+
+[自学路线图](/map/go.html)

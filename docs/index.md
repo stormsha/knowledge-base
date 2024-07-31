@@ -8,26 +8,26 @@ hero:
   text: "个人知识库"
   tagline: 学途有径，一路同行
   actions:
-    - text: 知识星球
-      link: /知识星球/
+    - text: KnowledgePlanet
+      link: /KnowledgePlanet/
     - text: 必备工具
-      link: /编程导航/
+      link: /CodeNav/
 
 features:
-  - title: 🌏 知识星球
-    link: /知识星球/
+  - title: 🌏 KnowledgePlanet
+    link: /KnowledgePlanet/
     details: 高效的工具
     linkText: 学习社区
-  - title: 🔗 编程导航
-    link: /编程导航/
+  - title: 🔗 CodeNav
+    link: /CodeNav/
     details: 高效的工具
     linkText: 推荐
-  - title: 📚 自学路线图
-    link: /自学路线图/
+  - title: 📚 roadmap
+    link: /roadmap/
     details: 高效的工具
     linkText: 成长
-  - title: 📚 技术文档
-    link: /技术文档/
+  - title: 📚 OnlineDocuments
+    link: /OnlineDocuments/
     details: 高效的工具
     linkText: 成长
 ---
