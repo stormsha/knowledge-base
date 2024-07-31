@@ -10,8 +10,9 @@ import {
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
 import HeroImage from "./components/HeroImage.vue";
-import MNavLinks from "./components/MNavLinks.vue";
 import './styles/index.css'
+import RoadMap from "./components/RoadMap.vue";
+import MNavLinks from "./components/MNavLinks.vue";
 
 let homeStyle: HTMLStyleElement | undefined
 
@@ -57,6 +58,7 @@ export default {
     enhanceApp({app, router}: EnhanceAppContext) {
         useMediumZoomProvider(app, router)
         app.component('MNavLinks', MNavLinks)
+        app.component('RoadMap', RoadMap)
         if (typeof window !== 'undefined') {
             watch(
                 () => router.route.data.relativePath,

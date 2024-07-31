@@ -2,6 +2,7 @@ import {defineConfig} from 'vitepress'
 import {head, nav, sidebar, algolia} from "./configs";
 
 // https://vitepress.dev/reference/site-config
+// https://vercel.com/stormshas-projects
 //noinspection all
 export default defineConfig({
     vite: {
