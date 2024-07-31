@@ -1,8 +1,25 @@
-// vite.config.js
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite'
+import Components from 'unplugin-vue-components/vite'
 
-// https://vitejs.dev/config/
-export default {
-  plugins: [vue()],
-  // 其他配置...
-}
+export default defineConfig(async () => {
+  return {
+    assetsInclude: ['**/*.mov'],
+    optimizeDeps: {
+      exclude: [
+        'vitepress',
+      ],
+    },
+    plugins: [
+      Components({
+        include: [/\.vue$/, /\.md$/],
+        dirs: '.vitepress/theme/components',
+        dts: '.vitepress/components.d.ts',
+      }),
+    ],
+    ssr: {
+      noExternal: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities'
+      ],
+    },
+  }
+})
