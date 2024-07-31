@@ -6,7 +6,6 @@
       "DOM",
       "ESNext"
     ],
-    "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
@@ -30,5 +29,9 @@
     ".vitepress/**/*.ts",
     ".vitepress/**/*.tsx",
     ".vitepress/**/*.vue"
+  ],
+  "exclude": [
+    "**/node_modules/**",
+    "**/dist/**"
   ]
 }
