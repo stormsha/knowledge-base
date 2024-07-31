@@ -1,5 +1,4 @@
 import {defineConfig} from 'vitepress'
-import vue from '@vitejs/plugin-vue';
 import {head, nav, sidebar, algolia} from "./configs";
 
 // https://vitepress.dev/reference/site-config
@@ -27,7 +26,6 @@ export default defineConfig({
         hostname: 'https://www.devsroad.com/'
     },
     ignoreDeadLinks: true,
-    plugins: [vue()],
     themeConfig: {
         i18nRouting: false,
         markdown: {
