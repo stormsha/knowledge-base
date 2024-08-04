@@ -1,6 +1,7 @@
 @import './rainbow.css';
 @import './variables.scss';
 @import './vitepress.scss';
-@import 'medium.scss';
+@import './medium.scss';
 @import './home.css';
 @import './tailwind.scss';
+@import "./flow.css";

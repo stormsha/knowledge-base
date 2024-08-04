@@ -2,6 +2,6 @@
 
 [go](/roadmap/go.md)
 
-[java](/roadmap/go.md)
+[java](/roadmap/java.md)
 
-[python](/roadmap/go.md)
+[python](/roadmap/python.md)

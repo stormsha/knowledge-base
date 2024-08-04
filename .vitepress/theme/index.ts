@@ -3,7 +3,10 @@ import {EnhanceAppContext, useData} from "vitepress";
 import {h, watch} from "vue";
 import {useMediumZoomProvider} from "./composables/medium";
 //noinspection all
+import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import {
+    LayoutMode,
+    InjectionKey,
     NolebaseEnhancedReadabilitiesMenu,
     NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client';
@@ -13,6 +16,7 @@ import HeroImage from "./components/HeroImage.vue";
 import './styles/index.css'
 import RoadMap from "./components/RoadMap.vue";
 import MNavLinks from "./components/MNavLinks.vue";
+import PythonRoad from "./components/roadmap/python/PythonRoad.vue";
 
 let homeStyle: HTMLStyleElement | undefined
 
@@ -57,8 +61,14 @@ export default {
 
     enhanceApp({app, router}: EnhanceAppContext) {
         useMediumZoomProvider(app, router)
+        app.provide(InjectionKey, {
+            layoutSwitch: { // 设置增强阅读页面默认为全屏
+                defaultMode: LayoutMode.FullWidth,
+            },
+        } as Options)
         app.component('MNavLinks', MNavLinks)
         app.component('RoadMap', RoadMap)
+        app.component('PythonRoad', PythonRoad)
         if (typeof window !== 'undefined') {
             watch(
                 () => router.route.data.relativePath,

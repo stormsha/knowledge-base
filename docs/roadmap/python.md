@@ -1,3 +1,4 @@
-# Python 自学
 
-[自学路线图](/map/python.html)
+# Python 学习路线图
+
+<PythonRoad></PythonRoad>
