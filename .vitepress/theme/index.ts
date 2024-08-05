@@ -1,9 +1,9 @@
 import DefaultTheme from 'vitepress/theme'
-import {EnhanceAppContext, useData} from "vitepress";
-import {h, watch} from "vue";
+import {EnhanceAppContext, useData } from "vitepress";
+import {h, watch } from "vue";
 import {useMediumZoomProvider} from "./composables/medium";
 //noinspection all
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import type {Options} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import {
     LayoutMode,
     InjectionKey,
@@ -18,8 +18,6 @@ import RoadMap from "./components/RoadMap.vue";
 import MNavLinks from "./components/MNavLinks.vue";
 import MarkdownModal from "./components/MarkdownModal.vue";
 import PythonRoad from "./components/roadmap/python/PythonRoad.vue";
-import ContentPreview from "./components/ContentPreview.vue";
-import Demo from "./components/Demo.vue";
 
 let homeStyle: HTMLStyleElement | undefined
 
@@ -54,7 +52,7 @@ export default {
         }
 
         return h(DefaultTheme.Layout, props, {
-            'home-hero-image':() => h(HeroImage),
+            'home-hero-image': () => h(HeroImage),
             // 为较宽的屏幕的导航栏添加阅读增强菜单
             'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
             // 为较窄的屏幕（通常是小于 iPad Mini）添加阅读增强菜单
@@ -62,7 +60,7 @@ export default {
         })
     },
 
-    enhanceApp({app, router}: EnhanceAppContext) {
+   enhanceApp({app, router}: EnhanceAppContext) {
         useMediumZoomProvider(app, router)
         app.provide(InjectionKey, {
             layoutSwitch: { // 设置增强阅读页面默认为全屏
@@ -73,8 +71,6 @@ export default {
         app.component('RoadMap', RoadMap)
         app.component('PythonRoad', PythonRoad)
         app.component('MarkdownModal', MarkdownModal)
-        app.component('ContentPreview', ContentPreview)
-        app.component('Demo', Demo)
         if (typeof window !== 'undefined') {
             watch(
                 () => router.route.data.relativePath,
@@ -82,5 +78,5 @@ export default {
                 {immediate: true},
             )
         }
-    }
+    },
 }

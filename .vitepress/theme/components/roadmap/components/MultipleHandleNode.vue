@@ -10,9 +10,6 @@ const {nodes, edges} = defineProps(['nodes', 'edges'])
 <template>
   <div>
     <VueFlow :nodes="nodes" :edges="edges">
-      <template #node-link>
-
-      </template>>
       <template #node-custom-node="props">
         <div class="button" >{{ props.data.label }}</div>
           <Handle

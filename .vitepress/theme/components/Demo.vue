@@ -1,11 +1,11 @@
-<script setup lang="ts">
-
-</script>
 
 <template>
-  <slot></slot>
+  <div v-html="content"></div>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<script setup>
+import { ref } from 'vue';
+const content = ref('');
+const {data} = await import(`../data/roadmap.data`);
+content.value = data['python/basic'].html
+</script>

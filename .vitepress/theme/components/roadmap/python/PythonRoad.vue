@@ -10,5 +10,5 @@ const edges = ref(EDGES)
 </script>
 
 <template>
-  <MultipleHandleNode :nodes="nodes" :edges="edges"></MultipleHandleNode>
+  <MultipleHandleNode :nodes="nodes" :edges="edges"/>
 </template>

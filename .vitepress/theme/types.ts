@@ -13,3 +13,8 @@ export interface WIZARDS {
   title: string
   items: NAV_LINK[]
 }
+
+// 定义数据存储接口
+export interface DataStore {
+  data: any[] | null
+}

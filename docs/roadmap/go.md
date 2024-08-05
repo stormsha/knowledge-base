@@ -1,14 +1,8 @@
 
 # 主页面
 
-<Demo>
-    <!--@include: @/Python/basic.md-->
-</Demo>
 
------------------
+<MarkdownModal>
+<!--@include: @/roadmap/Python/basic.md-->
+</MarkdownModal>
 
-<<< @/Python/basic.md
-
-
-<ContentPreview src="/Python/basic.md">
-</ContentPreview>
