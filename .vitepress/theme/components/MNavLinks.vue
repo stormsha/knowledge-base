@@ -3,11 +3,11 @@ import { computed } from 'vue'
 import { slugify } from '@mdit-vue/shared'
 
 import MNavLink from './MNavLink.vue'
-import type { NavLink } from '../types'
+import type { NAV_LINK } from '../types'
 
 const props = defineProps<{
   title: string
-  items: NavLink[]
+  items: NAV_LINK[]
 }>()
 
 const formatTitle = computed(() => {
