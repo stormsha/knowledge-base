@@ -1,7 +1,7 @@
 <script setup>
 import {VueFlow, Handle} from '@vue-flow/core'
-import { Background } from '@vue-flow/background'
-import { Controls } from '@vue-flow/controls'
+
+import './style.css'
 
 //noinspection all
 const {nodes, edges} = defineProps(['nodes', 'edges'])
@@ -9,12 +9,15 @@ const {nodes, edges} = defineProps(['nodes', 'edges'])
 
 <template>
   <div>
-    <VueFlow :nodes="nodes" :edges="edges">
-      <template #node-link>
-
-      </template>>
-      <template #node-custom-node="props">
-        <div class="button" >{{ props.data.label }}</div>
+    <VueFlow
+        :nodes-draggable="false"
+        :nodes="nodes"
+        :edges="edges"
+        :min-zoom="1"
+        :max-zoom="1"
+    >
+      <template #node-points="props">
+        <div class="button">{{ props.data.label }}</div>
           <Handle
               v-for="handle in props.data.handles"
               :key="handle.id"
@@ -22,8 +25,6 @@ const {nodes, edges} = defineProps(['nodes', 'edges'])
               v-bind="handle"
           />
       </template>
-      <Controls />
-      <Background />
     </VueFlow>
   </div>
 </template>
