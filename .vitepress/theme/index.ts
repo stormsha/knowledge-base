@@ -16,10 +16,7 @@ import HeroImage from "./components/HeroImage.vue";
 import './styles/index.css'
 import RoadMap from "./components/RoadMap.vue";
 import MNavLinks from "./components/MNavLinks.vue";
-import MarkdownModal from "./components/MarkdownModal.vue";
 import PythonRoad from "./components/roadmap/python/PythonRoad.vue";
-import ContentPreview from "./components/ContentPreview.vue";
-import Demo from "./components/Demo.vue";
 
 let homeStyle: HTMLStyleElement | undefined
 
@@ -72,9 +69,6 @@ export default {
         app.component('MNavLinks', MNavLinks)
         app.component('RoadMap', RoadMap)
         app.component('PythonRoad', PythonRoad)
-        app.component('MarkdownModal', MarkdownModal)
-        app.component('ContentPreview', ContentPreview)
-        app.component('Demo', Demo)
         if (typeof window !== 'undefined') {
             watch(
                 () => router.route.data.relativePath,

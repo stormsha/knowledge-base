@@ -8,7 +8,7 @@
     height: 100vh !important;
 }
 
-.vue-flow__node-custom-node {
+.vue-flow__node-points {
     padding: 10px;
     border-radius: 3px;
     width: 150px;
@@ -18,4 +18,16 @@
     border-style: solid;
     color: var(--vf-node-text);
     background-color: var(--vf-node-bg);
+}
+
+.vue-flow__node-points .vue-flow__handle[data-handleid=left25] {
+    left:25%
+}
+
+.vue-flow__node-points .vue-flow__handle[data-handleid=right25] {
+    left:75%
+}
+
+.vue-flow__node-operator .vue-flow__handle {
+    background-color:red
 }

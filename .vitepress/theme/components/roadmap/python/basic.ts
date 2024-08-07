@@ -10,7 +10,7 @@ export const BASIC = [
     {
         id: '2',
         position: { x: BASIC_X + MAIN_NODE_WIDTH + BASIC_W, y: ROOT_NODE_TOP + 235 },
-        type: 'custom-node',
+        type: 'points',
         style: { backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px` },
         data: {
             label: '基础学习',
