@@ -107,7 +107,7 @@ export const MODULES_NODE = [
             x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
             y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 6 + NODE_MARGIN * 4
         },
-        sourcePosition: Position.Right,
+        sourcePosition: Position.Bottom,
         style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
     },
 ]
@@ -125,5 +125,13 @@ export const MODULES_EDGES = [
         source: '4b',
         target: '4',
         targetHandle: 'right25',
+    },
+    {
+        id: 'e8-9',
+        source: '8',
+        target: '9',
+        targetHandle: 'handle-right',
+        animated: true,
+        type: 'smoothstep'
     },
 ]
