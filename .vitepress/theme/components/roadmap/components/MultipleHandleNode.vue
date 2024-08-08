@@ -31,6 +31,3 @@ const {nodes, edges} = defineProps(['nodes', 'edges'])
     </VueFlow>
   </div>
 </template>
-
-<!--<Handle id="target-a" type="target" :position="Position.Left" :connectable="false" />-->
-<!--<Handle id="target-b" type="target" :position="Position.Left" :connectable="false" />-->
