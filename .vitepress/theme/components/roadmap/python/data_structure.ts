@@ -9,7 +9,7 @@ const BASIC_Y = 425
 export const DATA_STRUCTURE = [
     {
         id: '3',
-        type: 'input',
+        type: 'points',
         position: { x: BASIC_X, y: ROOT_NODE_TOP + BASIC_Y - 60 },
         style: { backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px` },
         data: {
@@ -23,17 +23,17 @@ export const DATA_STRUCTURE = [
                 {
                     id: 'handle-right',
                     position: Position.Right,
-                    type: "target",
+                    type: "source",
                 },
                 {
                     id: 'handle-top',
                     position: Position.Top,
-                    type: "source",
+                    type: "target",
                 },
                 {
                     id: 'handle-b',
                     position: Position.Bottom,
-                    type: "target",
+                    type: "source",
                 },
             ]
         }
@@ -96,6 +96,15 @@ export const DATA_STRUCTURE_EDGES = [
         id: 'e3-3a',
         source: '3',
         target: '3a',
+        sourceHandle: 'handle-bottom',
         targetHandle: 'handle-top'
+    },
+    {
+        id: 'e3-4',
+        source: '3',
+        target: '4',
+        sourceHandle: 'handle-right',
+        targetHandle: 'handle-left',
+        animated: true,
     },
 ]

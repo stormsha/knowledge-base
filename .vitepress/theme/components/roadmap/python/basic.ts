@@ -43,7 +43,6 @@ export const BASIC = [
         data: { label: '基础语法' },
         position: { x: BASIC_X, y: ROOT_NODE_TOP + 150 },
         sourcePosition: Position.Right,
-        __rf: { position: 'right' },
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
