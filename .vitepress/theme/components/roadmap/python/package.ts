@@ -8,7 +8,7 @@ import {
   SECOND_LEVEL_NODE_COLOR
 } from "../constant";
 
-const BASIC_Y = 450
+const BASIC_Y = 430
 
 export const PACKAGE_NODE = [
   {
@@ -19,6 +19,11 @@ export const PACKAGE_NODE = [
         {
           id: 'handle-left',
           position: Position.Left,
+          type: "target",
+        },
+        {
+          id: 'handle-right',
+          position: Position.Right,
           type: "target",
         },
         {
@@ -36,7 +41,7 @@ export const PACKAGE_NODE = [
     type: 'points',
     position: {
       x: NODE_LEFT,
-      y: BASIC_Y + MAIN_NODE_HEIGHT * 4 + NODE_MARGIN * 4
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 5
     },
     style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
   },
@@ -45,7 +50,7 @@ export const PACKAGE_NODE = [
     data: {label: 'Pip'},
     position: {
       x: NODE_LEFT,
-      y: BASIC_Y
+      y: BASIC_Y + MAIN_NODE_HEIGHT + NODE_MARGIN
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
@@ -58,7 +63,7 @@ export const PACKAGE_NODE = [
     data: {label: 'uv'},
     position: {
       x: NODE_LEFT + MAIN_NODE_WIDTH / 2,
-      y: BASIC_Y
+      y: BASIC_Y + MAIN_NODE_HEIGHT + NODE_MARGIN
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
@@ -71,7 +76,7 @@ export const PACKAGE_NODE = [
     data: {label: 'Conda'},
     position: {
       x: NODE_LEFT,
-      y: BASIC_Y + MAIN_NODE_HEIGHT + NODE_MARGIN
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN * 2
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
@@ -84,7 +89,7 @@ export const PACKAGE_NODE = [
     data: {label: 'Poetry'},
     position: {
       x: NODE_LEFT + MAIN_NODE_WIDTH / 2,
-      y: BASIC_Y + MAIN_NODE_HEIGHT + NODE_MARGIN
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN * 2
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
@@ -97,7 +102,16 @@ export const PACKAGE_NODE = [
     data: {label: 'PyPi'},
     position: {
       x: NODE_LEFT,
-      y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN * 2
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN * 3
+    },
+    style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+  },
+  {
+    id: '10f',
+    data: {label: '常用包'},
+    position: {
+      x: NODE_LEFT,
+      y: BASIC_Y
     },
     style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
   },
@@ -109,5 +123,12 @@ export const PACKAGE_EDGES = [
     source: '10e',
     target: '10',
     targetHandle: 'handle-top',
+  },
+  {
+    id: 'e10-11',
+    source: '10',
+    target: '11',
+    targetHandle: 'handle-top',
+    animated: true,
   },
 ]

@@ -19,7 +19,7 @@ export const OBJECT_NODE = [
         {
           id: 'handle-left',
           position: Position.Left,
-          type: "target",
+          type: "source",
         },
         {
           id: 'handle-right',
@@ -68,11 +68,23 @@ export const OBJECT_NODE = [
     style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
   },
 ]
+
+
+//noinspection all
 export const OBJECT_EDGES = [
   {
     id: 'e9-9a',
     source: '9',
     target: '9a',
     sourceHandle: 'handle-bottom',
+  },
+  {
+    id: 'e9-10',
+    source: '9',
+    target: '10',
+    sourceHandle: 'handle-left',
+    targetHandle: 'handle-right',
+    animated: true,
+    type: 'smoothstep'
   },
 ]

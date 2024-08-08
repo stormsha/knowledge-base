@@ -4,6 +4,10 @@ import {DATA_STRUCTURE, DATA_STRUCTURE_EDGES} from "./data_structure";
 import {MODULES_EDGES, MODULES_NODE} from "./modules";
 import {OBJECT_EDGES, OBJECT_NODE} from "./object";
 import {PACKAGE_EDGES, PACKAGE_NODE} from "./package";
+import {ADVANCED_EDGES, ADVANCED_NODE} from "./advanced";
+import {FRAMEWORKS_EDGES, FRAMEWORKS_NODE} from "./frameworks";
+import {ENVIRONMENTS_NODE} from "./environments";
+import {CONCURRENCY_NODE} from "./concurrency";
 
 
 // 学习路线节点
@@ -14,6 +18,10 @@ export const NODES = [
   ...MODULES_NODE, // 模块
   ...OBJECT_NODE, // 面向对象编程
   ...PACKAGE_NODE, // 包管理
+  ...ENVIRONMENTS_NODE, // 虚拟环境
+  ...ADVANCED_NODE, // 进阶
+  ...FRAMEWORKS_NODE, // 框架
+  ...CONCURRENCY_NODE, // 并发编程
 ]
 
 // 学习路线路径
@@ -24,4 +32,6 @@ export const EDGES = [
   ...MODULES_EDGES, // 模块路径
   ...OBJECT_EDGES, // 面向对象编程路径
   ...PACKAGE_EDGES, // 包管理路径
+  ...FRAMEWORKS_EDGES, // 框架理路径
+  ...ADVANCED_EDGES, // 进阶路径
 ]
