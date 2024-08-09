@@ -1,6 +1,6 @@
 import {MAIN_NODE_COLOR, MAIN_NODE_HEIGHT, MAIN_NODE_WIDTH, NODE_LEFT, SECOND_LEVEL_NODE_COLOR} from "../constant";
 
-const BASIC_Y = 760
+const BASIC_Y = 700
 
 export const ENVIRONMENTS_NODE = [
     {

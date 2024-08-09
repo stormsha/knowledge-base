@@ -6,7 +6,7 @@ import {
     NODE_MARGIN,
 } from "../constant";
 
-const BASIC_Y = 970
+const BASIC_Y = 920
 
 export const ADVANCED_NODE = [
     {

@@ -8,6 +8,8 @@ import {ADVANCED_EDGES, ADVANCED_NODE} from "./advanced";
 import {FRAMEWORKS_EDGES, FRAMEWORKS_NODE} from "./frameworks";
 import {ENVIRONMENTS_NODE} from "./environments";
 import {CONCURRENCY_EDGES, CONCURRENCY_NODE} from "./concurrency";
+import {TYPING_EDGES, TYPING_NODE} from "./typing";
+import {TEST_EDGES, TEST_NODE} from "./test";
 
 
 // 学习路线节点
@@ -22,6 +24,8 @@ export const NODES = [
   ...ADVANCED_NODE, // 进阶
   ...CONCURRENCY_NODE, // 并发编程
   ...FRAMEWORKS_NODE, // 框架
+  ...TYPING_NODE, // 静态类型检查
+  ...TEST_NODE, // 测试
 ]
 
 // 学习路线路径
@@ -35,4 +39,6 @@ export const EDGES = [
   ...ADVANCED_EDGES, // 进阶路径
   ...CONCURRENCY_EDGES, // 并发编程路径
   ...FRAMEWORKS_EDGES, // 框架理路径
+  ...TYPING_EDGES, // 静态类型检查路径
+  ...TEST_EDGES, // 测试路径
 ]

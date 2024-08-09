@@ -7,7 +7,7 @@ import {
 } from "../constant";
 import {Position} from "@vue-flow/core";
 
-const BASIC_Y = 900
+const BASIC_Y = 795
 
 
 export const OBJECT_NODE = [
@@ -35,7 +35,7 @@ export const OBJECT_NODE = [
     },
     type: 'points',
     position: {
-      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W,
+      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W/2,
       y: BASIC_Y
     },
     style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
@@ -44,7 +44,7 @@ export const OBJECT_NODE = [
     id: '9a',
     data: {label: '类'},
     position: {
-      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W,
+      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W/2,
       y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN
     },
     style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
@@ -53,7 +53,7 @@ export const OBJECT_NODE = [
     id: '9b',
     data: {label: '继承'},
     position: {
-      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W,
+      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W/2,
       y: BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN * 2
     },
     style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
@@ -62,7 +62,7 @@ export const OBJECT_NODE = [
     id: '9c',
     data: {label: '类方法'},
     position: {
-      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W,
+      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W/2,
       y: BASIC_Y + MAIN_NODE_HEIGHT * 4 + NODE_MARGIN * 3
     },
     style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},

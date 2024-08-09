@@ -3,7 +3,7 @@ import {
     MAIN_NODE_COLOR,
     MAIN_NODE_HEIGHT,
     MAIN_NODE_WIDTH,
-    MAIN_NODE_WIDTH_MAX, NODE_MARGIN,
+    MAIN_NODE_WIDTH_MAX,
     ROOT_NODE_TOP,
     SECOND_LEVEL_NODE_COLOR
 } from "../constant";
@@ -47,7 +47,7 @@ export const MODULES_NODE = [
         data: {label: '内置'},
         position: {
             x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: ROOT_NODE_TOP + BASIC_Y
+            y: BASIC_Y + ROOT_NODE_TOP
         },
         targetPosition: Position.Bottom,
         style: {
@@ -75,7 +75,7 @@ export const MODULES_NODE = [
         data: {label: '匿名函数'},
         position: {
             x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN
+            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 3 + MAIN_NODE_HEIGHT / 2
         },
         sourcePosition: Position.Right,
         style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
@@ -85,7 +85,7 @@ export const MODULES_NODE = [
         data: {label: '装饰器'},
         position: {
             x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 4 + NODE_MARGIN * 2
+            y: BASIC_Y + ROOT_NODE_TOP + MAIN_NODE_HEIGHT * 5
         },
         sourcePosition: Position.Right,
         style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
@@ -95,17 +95,27 @@ export const MODULES_NODE = [
         data: {label: '迭代器'},
         position: {
             x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 5 + NODE_MARGIN * 3
+            y: BASIC_Y + ROOT_NODE_TOP + MAIN_NODE_HEIGHT * 6 + MAIN_NODE_HEIGHT / 2
         },
         sourcePosition: Position.Right,
         style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
     },
     {
         id: '8',
-        data: {label: '正则表达式'},
+        type: 'points',
+        data: {
+            label: '正则表达式',
+            handles: [
+                {
+                    id: 'handle-left',
+                    position: Position.Left,
+                    type: "target",
+                },
+            ]
+        },
         position: {
             x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 6 + NODE_MARGIN * 4
+            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 8
         },
         sourcePosition: Position.Bottom,
         style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
@@ -130,6 +140,7 @@ export const MODULES_EDGES = [
         id: 'e8-9',
         source: '8',
         target: '9',
+        sourcetHandle: 'handle-left',
         targetHandle: 'handle-right',
         animated: true,
         type: 'smoothstep'

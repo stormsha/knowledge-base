@@ -6,7 +6,7 @@ import {
     NODE_LEFT, NODE_MARGIN, SECOND_LEVEL_NODE_COLOR,
 } from "../constant";
 
-const BASIC_Y = 1220
+const BASIC_Y = 1140
 
 export const CONCURRENCY_NODE = [
     {
@@ -54,7 +54,11 @@ export const CONCURRENCY_NODE = [
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN
         },
-        style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+        style: {
+            backgroundColor: SECOND_LEVEL_NODE_COLOR,
+            width: `${MAIN_NODE_WIDTH}px`,
+            height: `${MAIN_NODE_HEIGHT}px`
+        },
     },
     {
         id: '15b',
@@ -63,7 +67,11 @@ export const CONCURRENCY_NODE = [
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN * 2
         },
-        style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+        style: {
+            backgroundColor: SECOND_LEVEL_NODE_COLOR,
+            width: `${MAIN_NODE_WIDTH}px`,
+            height: `${MAIN_NODE_HEIGHT}px`
+        },
     },
     {
         id: '15c',
@@ -72,7 +80,11 @@ export const CONCURRENCY_NODE = [
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 4 + NODE_MARGIN * 3
         },
-        style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+        style: {
+            backgroundColor: SECOND_LEVEL_NODE_COLOR,
+            width: `${MAIN_NODE_WIDTH}px`,
+            height: `${MAIN_NODE_HEIGHT}px`
+        },
     },
     {
         id: '15d',
@@ -81,11 +93,15 @@ export const CONCURRENCY_NODE = [
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 5 + NODE_MARGIN * 4
         },
-        style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+        style: {
+            backgroundColor: SECOND_LEVEL_NODE_COLOR,
+            width: `${MAIN_NODE_WIDTH}px`,
+            height: `${MAIN_NODE_HEIGHT}px`
+        },
     },
 ]
 
-
+//noinspection all
 export const CONCURRENCY_EDGES = [
     {
         id: 'e15-16',
@@ -94,6 +110,7 @@ export const CONCURRENCY_EDGES = [
         sourceHandle: 'handle-right',
         targetHandle: 'handle-left',
         animated: true,
+        type: 'smoothstep',
     },
     {
         id: 'e15-15a',
