@@ -15,6 +15,7 @@ export const PACKAGE_NODE = [
     id: '10',
     data: {
       label: '包管理',
+      slug: 'DcirzmwC',
       handles: [
         {
           id: 'handle-left',

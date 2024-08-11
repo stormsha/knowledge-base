@@ -16,6 +16,7 @@ export const FRAMEWORKS_NODE = [
         type: 'points',
         data: {
             label: '框架',
+            slug: 'FU3tHe',
             handles: [
                 {
                     id: 'handle-left',
@@ -54,6 +55,7 @@ export const FRAMEWORKS_NODE = [
         type: 'points',
         data: {
             label: '同步 + 异步',
+            slug: 'oTkcNY',
             handles: [
                 {
                     id: 'handle-left',

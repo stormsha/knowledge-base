@@ -17,6 +17,7 @@ export const MODULES_NODE = [
         type: 'points',
         data: {
             label: '模块',
+            slug: "mh36Wt",
             handles: [
                 {
                     id: 'left25',
@@ -105,6 +106,7 @@ export const MODULES_NODE = [
         type: 'points',
         data: {
             label: '正则表达式',
+            slug: 'b5khdg',
             handles: [
                 {
                     id: 'handle-left',

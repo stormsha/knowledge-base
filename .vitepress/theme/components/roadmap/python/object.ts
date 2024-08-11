@@ -15,6 +15,7 @@ export const OBJECT_NODE = [
     id: '9',
     data: {
       label: '面向对象编程',
+      slug: 'Eb5dfJ',
       handles: [
         {
           id: 'handle-left',

@@ -17,6 +17,7 @@ export const TEST_NODE = [
         type: 'points',
         data: {
             label: '测试',
+            slug: 'GUaPMjJo',
             handles: [
                 {
                     id: 'handle-left',
@@ -45,6 +46,7 @@ export const TEST_NODE = [
         type: 'points',
         data: {
             label: 'unittest / pyUnit',
+            slug: '8hsE9m',
             handles: [
                 {
                     id: 'handle-top',
@@ -79,7 +81,10 @@ export const TEST_NODE = [
     {
         id: '18c',
         type: 'points',
-        data: {label: 'nose'},
+        data: {
+            label: 'nose',
+            slug: 'relnApFJAV',
+        },
         position: {
             x: NODE_LEFT + MAIN_NODE_WIDTH * 2 + BASIC_W * 5 / 2 + 20,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 3

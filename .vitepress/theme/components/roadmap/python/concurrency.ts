@@ -14,6 +14,7 @@ export const CONCURRENCY_NODE = [
         type: 'points',
         data: {
             label: '并发编程',
+            slug: "2yHvu1",
             handles: [
                 {
                     id: 'handle-left',

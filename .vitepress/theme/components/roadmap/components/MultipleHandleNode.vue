@@ -7,10 +7,10 @@ import './style.css'
 //noinspection all
 const {nodes, edges} = defineProps(['nodes', 'edges'])
 
-const emit = defineEmits(['trigger-modal']);
-
-const triggerModal = (url) => {
-  emit('trigger-modal', url);
+const emit = defineEmits(['trigger']);
+const triggerModal = (slug) => {
+  const s = slug || '11111';
+  emit('trigger', s);
 };
 
 </script>
@@ -25,8 +25,9 @@ const triggerModal = (url) => {
         :max-zoom="1"
     >
       <template #node-points="props">
-        <div class="node-btn" @click="triggerModal(props.data.slug)">{{props.data.label}}</div>
+        <div class="node-btn" @click="triggerModal(props.data?.slug)">{{props.data?.label || 'Default Label'}}</div>
         <Handle
+            v-if="'handles' in props.data"
             v-for="handle in props.data.handles"
             :id="handle.id"
             :key="handle.id"

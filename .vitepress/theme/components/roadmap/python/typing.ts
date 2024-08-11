@@ -18,6 +18,7 @@ export const TYPING_NODE = [
         type: 'points',
         data: {
             label: '静态类型检查',
+            slug: 'SmGo36w0',
             handles: [
                 {
                     id: 'handle-right',
@@ -51,6 +52,7 @@ export const TYPING_NODE = [
         type: 'points',
         data: {
             label: 'typing',
+            slug: '22aTIUJJ2UT',
             handles: [
                 {
                     id: 'handle-left',
@@ -75,6 +77,7 @@ export const TYPING_NODE = [
         type: 'points',
         data: {
             label: 'mypy',
+            slug: 'BiSOg4',
             handles: [
                 {
                     id: 'handle-left',
@@ -98,6 +101,7 @@ export const TYPING_NODE = [
         type: 'points',
         data: {
             label: 'pyright',
+            slug: 'UN2l1A4',
             handles: [
                 {
                     id: 'handle-left',
@@ -121,6 +125,7 @@ export const TYPING_NODE = [
         type: 'points',
         data: {
             label: 'pyre',
+            slug: 'XpWxrr',
             handles: [
                 {
                     id: 'handle-left',
@@ -144,6 +149,7 @@ export const TYPING_NODE = [
         type: 'points',
         data: {
             label: 'Pydantic',
+            slug: '1OywGm',
             handles: [
                 {
                     id: 'handle-left',
