@@ -4,15 +4,14 @@ import { data as posts } from './Python/python.data.ts';
 
 const slug  = ref('');
 const htmlContent = ref('');
-const dialogRef = ref(null);
-const myButton = ref(null);
+const dialogRef = ref('');
+const myButton = ref('');
 
 const showModal = (uid) => {
   slug.value = uid;
-  console.log(uid, posts, "uid");
-  if (slug){
-      htmlContent.value = posts[slug?.value];
-      dialogRef.value?.show();
+  if (slug.value in posts){
+      htmlContent.value = posts[slug.value];
+      dialogRef.value.show();
   }
 };
 
@@ -26,7 +25,7 @@ const hideModal = () => {
 
 ---
 
-<dialog v-if="slug" ref="dialogRef" class="roadmap-dialog">
+<dialog v-if="slug.value" ref="dialogRef" class="roadmap-dialog">
     <PostOverview
         :feature="htmlContent"
         @close-modal="hideModal">

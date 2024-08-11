@@ -6,7 +6,7 @@ interface Post {
     html: string | undefined
 }
 
-export default createContentLoader('roadmap/Go/*.md', {
+export default createContentLoader('学习路线图/Go/*.md', {
     render: true,
     includeSrc: true,
     transform(data) {
