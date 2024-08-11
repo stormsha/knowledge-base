@@ -1,0 +1,1 @@
+type Route = { [key: string]: string };

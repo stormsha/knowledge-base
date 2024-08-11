@@ -30,5 +30,6 @@
     ".vitepress/**/*.ts",
     ".vitepress/**/*.tsx",
     ".vitepress/**/*.vue"
-  ]
+  ],
+  "exclude": ["node_modules"]
 }

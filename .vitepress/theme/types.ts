@@ -13,3 +13,9 @@ export interface WIZARDS {
   title: string
   items: NAV_LINK[]
 }
+
+export interface Post {
+  title: string
+  url: string
+  html: string | undefined
+}

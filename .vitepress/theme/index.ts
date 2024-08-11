@@ -17,6 +17,8 @@ import './styles/index.css'
 import RoadMap from "./components/RoadMap.vue";
 import MNavLinks from "./components/MNavLinks.vue";
 import PythonRoad from "./components/roadmap/python/PythonRoad.vue";
+// import Demo from "./components/Demo.vue";
+import PostOverview from "./components/PostOverview.vue";
 
 let homeStyle: HTMLStyleElement | undefined
 
@@ -69,6 +71,8 @@ export default {
         app.component('MNavLinks', MNavLinks)
         app.component('RoadMap', RoadMap)
         app.component('PythonRoad', PythonRoad)
+        app.component('PostOverview', PostOverview)
+        // app.component('Demo', Demo)
         if (typeof window !== 'undefined') {
             watch(
                 () => router.route.data.relativePath,

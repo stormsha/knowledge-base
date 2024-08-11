@@ -8,12 +8,13 @@ const BASIC_W = 120
 // Python 基础学习
 export const BASIC = [
     {
-        id: '2',
+        id: 'XvJ1wCns',
         position: { x: BASIC_X + MAIN_NODE_WIDTH + BASIC_W, y: ROOT_NODE_TOP + 235 },
         type: 'points',
         style: { backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px` },
         data: {
             label: '基础学习',
+            slug:'XvJ1wCns',
             handles:[
                 {
                     id: 'handle-left',
@@ -39,81 +40,182 @@ export const BASIC = [
         }
     },
     {
-        id: '2a',
-        data: { label: '基础语法' },
+        id: 'hoiII9V',
+        type: 'points',
+        data: {
+            label: '基础语法',
+            slug:'hoiII9V',
+            handles:[
+                {
+                    id: 'handle-right',
+                    position: Position.Right,
+                    type: "source",
+                },
+            ]
+        },
         position: { x: BASIC_X, y: ROOT_NODE_TOP + 150 },
-        sourcePosition: Position.Right,
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
-        id: '2b',
-        data: { label: '变量和数据类型' },
+        id: 'OsIFG8T',
+        type: 'points',
+        data: {
+            label: '变量和数据类型',
+            slug: 'OsIFG8T',
+            handles:[
+                {
+                    id: 'handle-right',
+                    position: Position.Right,
+                    type: "source",
+                },
+            ]
+        },
         position: { x: BASIC_X, y: ROOT_NODE_TOP + 205 },
         sourcePosition: Position.Right,
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
-        id: '2c',
-        data: { label: '条件' },
+        id: 'bHKm0pwB',
+        type: 'points',
+        data: {
+            label: '条件',
+            slug: 'bHKm0pwB',
+            handles:[
+                {
+                    id: 'handle-right',
+                    position: Position.Right,
+                    type: "source",
+                },
+            ]
+        },
         position: { x: BASIC_X, y: ROOT_NODE_TOP + 260 },
-        sourcePosition: Position.Right,
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
-        id: '2d',
-        data: { label: '循环' },
+        id: 'NOhFv5j4O',
+        type: 'points',
+        data: {
+            label: '循环',
+            slug: 'NOhFv5j4O',
+            handles:[
+                {
+                    id: 'handle-right',
+                    position: Position.Right,
+                    type: "source",
+                },
+            ]
+        },
         position: { x: BASIC_X, y: ROOT_NODE_TOP + 315 },
-        sourcePosition: Position.Right,
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
 
     // 右侧
     {
-        id: '2e',
-        data: { label: '类型转换' },
-        position: { x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2, y: ROOT_NODE_TOP + 125 },
-        sourcePosition: Position.Left,
+        id: 'iR30hY8',
+        type: 'points',
+        data: {
+            label: '类型转换',
+            slug: 'iR30hY8',
+            handles:[
+                {
+                    id: 'handle-left',
+                    position: Position.Left,
+                    type: "source",
+                },
+            ]
+        },
+        position: {
+            x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+            y: ROOT_NODE_TOP + 125
+        },
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH + 30}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
-        id: '2f',
-        data: { label: '异常处理' },
-        position: { x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2, y: ROOT_NODE_TOP + 180 },
-        sourcePosition: Position.Left,
+        id: 'V6WjOa',
+        type: 'points',
+        data: {
+            label: '异常处理',
+            slug: 'V6WjOa',
+            handles:[
+                {
+                    id: 'handle-left',
+                    position: Position.Left,
+                    type: "source",
+                },
+            ]
+        },
+        position: {x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2, y: ROOT_NODE_TOP + 180 },
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH + 30}px`, height: `${MAIN_NODE_HEIGHT}px` },
 
     },
     {
-        id: '2g',
-        data: { label: '函数、内置函数' },
+        id: '14toUXAm',
+        type: 'points',
+        data: {
+            label: '函数、内置函数',
+            slug: '14toUXAm',
+            handles:[
+                {
+                    id: 'handle-left',
+                    position: Position.Left,
+                    type: "source",
+                },
+            ]
+        },
         position: { x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2, y: ROOT_NODE_TOP + 235 },
-        sourcePosition: Position.Left,
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH + 30}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
-        id: '2h1',
-        data: { label: '元组' },
+        id: 'vicbejRa',
+        type: 'points',
+        data: {
+            label: '元组',
+            slug: 'vicbejRa',
+            handles:[
+                {
+                    id: 'handle-left',
+                    position: Position.Left,
+                    type: "source",
+                },
+            ]
+        },
         position: { x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2, y: ROOT_NODE_TOP + 290 },
-        sourcePosition: Position.Left,
         style: { backgroundColor: '#e7c699', width: `${(MAIN_NODE_WIDTH + 30)/3}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
-        id: '2h2',
-        data: { label: '集合' },
+        id: 'll5cyV7F3',
+        type: 'points',
+        data: {
+            label: '集合',
+            slug: 'll5cyV7F3',
+        },
         position: { x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2 + 90, y: ROOT_NODE_TOP + 290 },
-        sourcePosition: Position.Left,
         style: { backgroundColor: '#e7c699', width: `${(MAIN_NODE_WIDTH + 30)/3}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
-        id: '2h3',
-        data: { label: '列表' },
+        id: 'UIlB6RgkW',
+        type: 'points',
+        data: {
+            label: '列表',
+            slug: 'UIlB6RgkW',
+        },
         position: { x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2 + 180, y: ROOT_NODE_TOP + 290 },
-        sourcePosition: Position.Left,
         style: { backgroundColor: '#e7c699', width: `${(MAIN_NODE_WIDTH + 30)/3}px`, height: `${MAIN_NODE_HEIGHT}px` },
     },
     {
-        id: '2i',
-        data: { label: '字典' },
+        id: '00umcxaJb',
+        type: 'points',
+        data: {
+            label: '字典',
+            slug: '00umcxaJb',
+            handles:[
+                {
+                    id: 'handle-left',
+                    position: Position.Left,
+                    type: "source",
+                },
+            ]
+        },
         position: { x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2, y: ROOT_NODE_TOP + 345 },
         sourcePosition: Position.Left,
         style: { backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH + 30}px`, height: `${MAIN_NODE_HEIGHT}px` },
@@ -123,57 +225,65 @@ export const BASIC = [
 
 export const BASIC_NODE_EDGES = [
     {
-        id: 'e2-2a',
-        source: '2a',
-        target: '2',
+        id: 'XvJ1wCns-hoiII9V',
+        source: 'hoiII9V',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-left'
     },
     {
-        id: 'e2-2b',
-        source: '2b',
-        target: '2',
+        id: 'XvJ1wCns-OsIFG8T',
+        source: 'OsIFG8T',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-left'
     },
     {
-        id: 'e2-2c',
-        source: '2c',
-        target: '2',
+        id: 'XvJ1wCns-bHKm0pwB',
+        source: 'bHKm0pwB',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-left'
     },
     {
-        id: 'e2-2d',
-        source: '2d',
-        target: '2',
+        id: 'XvJ1wCns-NOhFv5j4O',
+        source: 'NOhFv5j4O',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-left'
     },
     {
-        id: 'e2-2e',
-        source: '2e',
-        target: '2',
+        id: 'XvJ1wCns-iR30hY8',
+        source: 'iR30hY8',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-right'
     },
     {
-        id: 'e2-2f',
-        source: '2f',
-        target: '2',
+        id: 'XvJ1wCns-V6WjOa',
+        source: 'V6WjOa',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-right'
     },
     {
-        id: 'e2-2g',
-        source: '2g',
-        target: '2',
+        id: 'XvJ1wCns-14toUXAm',
+        source: '14toUXAm',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-right'
     },
     {
-        id: 'e2-2h1',
-        source: '2h1',
-        target: '2',
+        id: 'XvJ1wCns-vicbejRa',
+        source: 'vicbejRa',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-right'
     },
     {
-        id: 'e2-2i',
-        source: '2i',
-        target: '2',
+        id: 'XvJ1wCns-00umcxaJb',
+        source: '00umcxaJb',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-right'
+    },
+    {
+        id: 'XvJ1wCns-3',
+        source: 'XvJ1wCns',
+        target: '3',
+        sourceHandle: 'handle-bottom',
+        targetHandle: 'handle-top',
+        animated: true,
     },
 ]

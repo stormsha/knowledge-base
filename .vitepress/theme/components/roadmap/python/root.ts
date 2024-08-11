@@ -8,7 +8,10 @@ export const ROOT_NODE = [
     {
         id: '1',
         type: 'input',
-        data: { label: 'Python' },
+        data: {
+            label: 'Python',
+            url: '/roadmap/python'
+        },
         position: { x: 380, y: ROOT_NODE_TOP },
         style: { width: `${MAIN_NODE_WIDTH}px` },
         targetPosition: Position.Top,
@@ -16,9 +19,9 @@ export const ROOT_NODE = [
 ]
 
 export const ROOT_EDGES = [
-    { id: 'e1-2',
+    { id: 'e1-XvJ1wCns',
         source: '1',
-        target: '2',
+        target: 'XvJ1wCns',
         targetHandle: 'handle-top',
         animated: true,
     },

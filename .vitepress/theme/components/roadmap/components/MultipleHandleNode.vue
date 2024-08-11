@@ -1,10 +1,18 @@
 <script setup>
+import { defineEmits } from 'vue';
 import {VueFlow, Handle} from '@vue-flow/core'
 
 import './style.css'
 
 //noinspection all
 const {nodes, edges} = defineProps(['nodes', 'edges'])
+
+const emit = defineEmits(['trigger-modal']);
+
+const triggerModal = (url) => {
+  emit('trigger-modal', url);
+};
+
 </script>
 
 <template>
@@ -17,16 +25,16 @@ const {nodes, edges} = defineProps(['nodes', 'edges'])
         :max-zoom="1"
     >
       <template #node-points="props">
-        <div class="button">{{props.data.label}}</div>
-          <Handle
-              v-for="handle in props.data.handles"
-              :id="handle.id"
-              :key="handle.id"
-              :position="handle.position"
-              :type="handle.type"
-              :connectable="false"
-              v-bind="handle"
-          />
+        <div class="node-btn" @click="triggerModal(props.data.slug)">{{props.data.label}}</div>
+        <Handle
+            v-for="handle in props.data.handles"
+            :id="handle.id"
+            :key="handle.id"
+            :position="handle.position"
+            :type="handle.type"
+            :connectable="false"
+            v-bind="handle"
+        />
       </template>
     </VueFlow>
   </div>

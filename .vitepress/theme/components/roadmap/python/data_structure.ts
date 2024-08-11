@@ -22,6 +22,7 @@ export const DATA_STRUCTURE = [
         style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`},
         data: {
             label: '数据结构与算法',
+            url:'/roadmap/Python/basic.html',
             handles: [
                 {
                     id: 'handle-left',
@@ -134,14 +135,6 @@ export const DATA_STRUCTURE = [
 
 //noinspection all
 export const DATA_STRUCTURE_EDGES = [
-    {
-        id: 'e2-3',
-        source: '2',
-        target: '3',
-        sourceHandle: 'handle-bottom',
-        targetHandle: 'handle-top',
-        animated: true,
-    },
     {
         id: 'e3-3a',
         source: '3',

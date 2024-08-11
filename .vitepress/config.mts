@@ -1,5 +1,6 @@
 import {defineConfig} from 'vitepress'
 import {head, nav, sidebar, algolia} from "./configs";
+import {RouteMap} from "./configs/routes";
 
 // https://vitepress.dev/reference/site-config
 // https://vercel.com/stormshas-projects
@@ -28,6 +29,7 @@ export default defineConfig({
         hostname: 'https://www.devsroad.com/'
     },
     ignoreDeadLinks: true,
+    rewrites: RouteMap,
     themeConfig: {
         i18nRouting: false,
         markdown: {
