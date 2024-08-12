@@ -1,8 +1,8 @@
 <script setup>
-import { ref, defineEmits } from 'vue';
+import { ref } from 'vue';
 import {VueFlow, Handle} from '@vue-flow/core'
 
-import './style.css'
+import '../style.css'
 
 const isSSR = ref(import.meta.env.SSR);
 // v-if="!isSSR"

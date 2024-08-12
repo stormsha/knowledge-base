@@ -1,7 +1,8 @@
 <script setup>
-import {defineEmits, ref} from 'vue'
+import {ref} from 'vue'
 import {NODES, EDGES} from "./data";
 import {Handle, VueFlow} from "@vue-flow/core";
+import '../style.css'
 
 const isSSR = ref(import.meta.env.SSR);
 

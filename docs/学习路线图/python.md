@@ -4,17 +4,13 @@ import {ref} from 'vue';
 
 import { data as posts } from './Python/python.data.ts';
 
-
-const slug = ref('');
 const htmlContent = ref('');
 const dialogRef = ref('');
 const myButton = ref('');
 
 const showModal = (uid) => {
-  console.log("uid", uid);
-  slug.value = uid;
-  if (uid && slug.value in posts){
-      htmlContent.value = posts[slug.value];
+  if (uid && uid in posts){
+      htmlContent.value = posts[uid];
       dialogRef.value?.show();
   }
 };
