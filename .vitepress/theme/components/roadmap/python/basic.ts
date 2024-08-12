@@ -12,12 +12,19 @@ const BASIC_X = 20
 const BASIC_W = 120
 
 // Python 基础学习
+//noinspection all
 export const BASIC = [
   {
     id: 'XvJ1wCns',
-    position: {x: BASIC_X + MAIN_NODE_WIDTH + BASIC_W, y: ROOT_NODE_TOP + 235},
+    position: {
+      x: BASIC_X + MAIN_NODE_WIDTH + BASIC_W,
+      y: ROOT_NODE_TOP + 235
+    },
     type: 'points',
-    style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`},
+    style: {
+      backgroundColor: MAIN_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`
+    },
     data: {
       label: '基础学习',
       slug: 'XvJ1wCns',
@@ -59,8 +66,15 @@ export const BASIC = [
         },
       ]
     },
-    position: {x: BASIC_X, y: ROOT_NODE_TOP + 150},
-    style: {backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    position: {
+      x: BASIC_X,
+      y: ROOT_NODE_TOP + 150
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
   {
     id: 'OsIFG8T',
@@ -76,9 +90,15 @@ export const BASIC = [
         },
       ]
     },
-    position: {x: BASIC_X, y: ROOT_NODE_TOP + 205},
-    sourcePosition: Position.Right,
-    style: {backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    position: {
+      x: BASIC_X,
+      y: ROOT_NODE_TOP + 205
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
   {
     id: 'bHKm0pwB',
@@ -94,8 +114,15 @@ export const BASIC = [
         },
       ]
     },
-    position: {x: BASIC_X, y: ROOT_NODE_TOP + 260},
-    style: {backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    position: {
+      x: BASIC_X,
+      y: ROOT_NODE_TOP + 260
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
   {
     id: 'NOhFv5j4O',
@@ -111,8 +138,15 @@ export const BASIC = [
         },
       ]
     },
-    position: {x: BASIC_X, y: ROOT_NODE_TOP + 315},
-    style: {backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    position: {
+      x: BASIC_X,
+      y: ROOT_NODE_TOP + 315
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
 
   // 右侧
@@ -134,7 +168,11 @@ export const BASIC = [
       x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
       y: ROOT_NODE_TOP + 125
     },
-    style: {backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH + 30}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH + 30}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
   {
     id: 'V6WjOa',
@@ -150,8 +188,15 @@ export const BASIC = [
         },
       ]
     },
-    position: {x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2, y: ROOT_NODE_TOP + 180},
-    style: {backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH + 30}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    position: {
+      x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+      y: ROOT_NODE_TOP + 180
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH + 30}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
 
   },
   {
@@ -168,8 +213,15 @@ export const BASIC = [
         },
       ]
     },
-    position: {x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2, y: ROOT_NODE_TOP + 235},
-    style: {backgroundColor: '#e7c699', width: `${MAIN_NODE_WIDTH + 30}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    position: {
+      x: BASIC_X + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+      y: ROOT_NODE_TOP + 235
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH + 30}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
   {
     id: 'vicbejRa',
