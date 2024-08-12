@@ -5,14 +5,11 @@ import {Handle, VueFlow} from "@vue-flow/core";
 
 const isSSR = ref(import.meta.env.SSR);
 
-const {trigger} = defineProps(['trigger']);
-
 const nodes = ref(NODES)
 const edges = ref(EDGES)
 
 const emit = defineEmits(['trigger']);
 const triggerModal = (slug) => {
-  console.log(slug, "slug")
   emit('trigger', slug);
 };
 
