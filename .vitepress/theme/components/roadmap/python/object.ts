@@ -12,7 +12,8 @@ const BASIC_Y = 795
 
 export const OBJECT_NODE = [
   {
-    id: '9',
+    id: 'Eb5dfJ',
+    type: 'points',
     data: {
       label: '面向对象编程',
       slug: 'Eb5dfJ',
@@ -34,39 +35,69 @@ export const OBJECT_NODE = [
         },
       ]
     },
-    type: 'points',
     position: {
-      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W/2,
+      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W / 2,
       y: BASIC_Y
     },
     style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
   },
   {
-    id: '9a',
-    data: {label: '类'},
+    id: 'IeiJ4jcu',
+    type: 'points',
+    data: {
+      label: '类',
+      slug: 'IeiJ4jcu',
+      handles: [
+        {
+          id: 'handle-top',
+          position: Position.Top,
+          type: "source",
+        }
+      ]
+    },
     position: {
-      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W/2,
+      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W / 2,
       y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN
     },
-    style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
   {
-    id: '9b',
-    data: {label: '继承'},
+    id: 'd2zVahVDh',
+    type: 'points',
+    data: {
+      label: '继承',
+      slug: 'd2zVahVDh',
+    },
     position: {
-      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W/2,
+      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W / 2,
       y: BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN * 2
     },
-    style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
   {
-    id: '9c',
-    data: {label: '类方法'},
+    id: 'bIBUi3t',
+    type: 'points',
+    data: {
+      label: '类方法',
+      slug: 'bIBUi3t',
+    },
     position: {
-      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W/2,
+      x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W / 2,
       y: BASIC_Y + MAIN_NODE_HEIGHT * 4 + NODE_MARGIN * 3
     },
-    style: {backgroundColor: SECOND_LEVEL_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
   },
 ]
 
@@ -74,15 +105,15 @@ export const OBJECT_NODE = [
 //noinspection all
 export const OBJECT_EDGES = [
   {
-    id: 'e9-9a',
-    source: '9',
-    target: '9a',
+    id: 'Eb5dfJ',
+    source: 'Eb5dfJ',
+    target: 'IeiJ4jcu',
     sourceHandle: 'handle-bottom',
   },
   {
-    id: 'e9-10',
-    source: '9',
-    target: '10',
+    id: 'Eb5dfJ-2Gnugw',
+    source: 'Eb5dfJ',
+    target: '2Gnugw',
     sourceHandle: 'handle-left',
     targetHandle: 'handle-right',
     animated: true,

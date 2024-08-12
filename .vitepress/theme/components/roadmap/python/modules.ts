@@ -1,150 +1,271 @@
 import {Position} from '@vue-flow/core'
 import {
-    MAIN_NODE_COLOR,
-    MAIN_NODE_HEIGHT,
-    MAIN_NODE_WIDTH,
-    MAIN_NODE_WIDTH_MAX,
-    ROOT_NODE_TOP,
-    SECOND_LEVEL_NODE_COLOR
+  BASIC_W,
+  MAIN_NODE_COLOR,
+  MAIN_NODE_HEIGHT,
+  MAIN_NODE_WIDTH,
+  MAIN_NODE_WIDTH_MAX, NODE_MARGIN,
+  ROOT_NODE_TOP,
+  SECOND_LEVEL_NODE_COLOR
 } from "../constant";
 
 const BASIC_Y = 425
-const BASIC_W = 120
 
 export const MODULES_NODE = [
-    {
-        id: '4',
-        type: 'points',
-        data: {
-            label: '模块',
-            slug: "mh36Wt",
-            handles: [
-                {
-                    id: 'left25',
-                    position: Position.Top,
-                    type: "target",
-                },
-                {
-                    id: 'right25',
-                    position: Position.Top,
-                    type: "target",
-                },
-
-                {
-                    id: 'handle-left',
-                    position: Position.Left,
-                    type: "target",
-                },
-            ]
+  {
+    id: 'm3sCV7',
+    type: 'points',
+    data: {
+      label: '模块',
+      slug: "m3sCV7",
+      handles: [
+        {
+          id: 'left25',
+          position: Position.Top,
+          type: "target",
         },
-        position: {
-            x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 2
+        {
+          id: 'right25',
+          position: Position.Top,
+          type: "target",
         },
-        style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH + 30}px`, height: `${MAIN_NODE_HEIGHT}px`},
+        {
+          id: 'handle-left',
+          position: Position.Left,
+          type: "target",
+        },
+        {
+          id: 'handle-bottom',
+          position: Position.Bottom,
+          type: "source",
+        },
+      ]
     },
-    {
-        id: '4a',
-        data: {label: '内置'},
-        position: {
-            x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: BASIC_Y + ROOT_NODE_TOP
-        },
-        targetPosition: Position.Bottom,
-        style: {
-            backgroundColor: SECOND_LEVEL_NODE_COLOR,
-            width: `${MAIN_NODE_WIDTH_MAX / 2}px`,
-            height: `${MAIN_NODE_HEIGHT}px`
-        },
+    position: {
+      x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+      y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 2
     },
-    {
-        id: '4b',
-        data: {label: '自定义'},
-        position: {
-            x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2 + MAIN_NODE_WIDTH_MAX / 2,
-            y: ROOT_NODE_TOP + BASIC_Y
-        },
-        targetPosition: Position.Bottom,
-        style: {
-            backgroundColor: SECOND_LEVEL_NODE_COLOR,
-            width: `${MAIN_NODE_WIDTH_MAX / 2}px`,
-            height: `${MAIN_NODE_HEIGHT}px`
-        },
+    style: {
+      backgroundColor: MAIN_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH + 30}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
     },
-    {
-        id: '5',
-        data: {label: '匿名函数'},
-        position: {
-            x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 3 + MAIN_NODE_HEIGHT / 2
+  },
+  {
+    id: 'OPbDjGD',
+    type: 'points',
+    data: {
+      label: '内置',
+      slug: 'OPbDjGD',
+      handles: [
+        {
+          id: 'handle-bottom',
+          position: Position.Bottom,
+          type: "target",
         },
-        sourcePosition: Position.Right,
-        style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
+      ]
     },
-    {
-        id: '6',
-        data: {label: '装饰器'},
-        position: {
-            x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: BASIC_Y + ROOT_NODE_TOP + MAIN_NODE_HEIGHT * 5
-        },
-        sourcePosition: Position.Right,
-        style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    position: {
+      x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+      y: BASIC_Y + ROOT_NODE_TOP
     },
-    {
-        id: '7',
-        data: {label: '迭代器'},
-        position: {
-            x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: BASIC_Y + ROOT_NODE_TOP + MAIN_NODE_HEIGHT * 6 + MAIN_NODE_HEIGHT / 2
-        },
-        sourcePosition: Position.Right,
-        style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH_MAX / 2 - NODE_MARGIN}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
     },
-    {
-        id: '8',
-        type: 'points',
-        data: {
-            label: '正则表达式',
-            slug: 'b5khdg',
-            handles: [
-                {
-                    id: 'handle-left',
-                    position: Position.Left,
-                    type: "target",
-                },
-            ]
+  },
+  {
+    id: 'iuauDp',
+    type: 'points',
+    data: {
+      label: '自定义',
+      slug: 'iuauDp',
+      handles: [
+        {
+          id: 'handle-bottom',
+          position: Position.Bottom,
+          type: "target",
         },
-        position: {
-            x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
-            y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 8
-        },
-        sourcePosition: Position.Bottom,
-        style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
+      ]
     },
+    position: {
+      x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2 + MAIN_NODE_WIDTH_MAX / 2 + NODE_MARGIN,
+      y: ROOT_NODE_TOP + BASIC_Y
+    },
+    targetPosition: Position.Bottom,
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH_MAX / 2 - NODE_MARGIN}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
+  {
+    id: '51DBUJ9T',
+    type: 'points',
+    data: {
+      label: '匿名函数',
+      slug: '51DBUJ9T',
+      handles: [
+        {
+          id: 'handle-top',
+          position: Position.Bottom,
+          type: "target",
+        },
+        {
+          id: 'handle-bottom',
+          position: Position.Bottom,
+          type: "source",
+        },
+      ]
+    },
+    position: {
+      x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+      y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 3 + MAIN_NODE_HEIGHT / 2
+    },
+    sourcePosition: Position.Right,
+    style: {
+      backgroundColor: MAIN_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH_MAX}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
+  {
+    id: '3jxo5N6',
+    type: 'points',
+    data: {
+      label: '装饰器',
+      slug: '3jxo5N6',
+      handles: [
+        {
+          id: 'handle-top',
+          position: Position.Bottom,
+          type: "target",
+        },
+        {
+          id: 'handle-bottom',
+          position: Position.Bottom,
+          type: "source",
+        },
+      ]
+    },
+    position: {
+      x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+      y: BASIC_Y + ROOT_NODE_TOP + MAIN_NODE_HEIGHT * 5
+    },
+    sourcePosition: Position.Right,
+    style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH_MAX}px`, height: `${MAIN_NODE_HEIGHT}px`},
+  },
+  {
+    id: 'k2yAMO',
+    type: 'points',
+    data: {
+      label: '迭代器',
+      slug: 'k2yAMO',
+      handles: [
+        {
+          id: 'handle-top',
+          position: Position.Top,
+          type: "target",
+        },
+        {
+          id: 'handle-bottom',
+          position: Position.Bottom,
+          type: "source",
+        },
+      ]
+    },
+    position: {
+      x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+      y: BASIC_Y + ROOT_NODE_TOP + MAIN_NODE_HEIGHT * 6 + MAIN_NODE_HEIGHT / 2
+    },
+    sourcePosition: Position.Right,
+    style: {
+      backgroundColor: MAIN_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH_MAX}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
+  {
+    id: 'CidoaBt',
+    type: 'points',
+    data: {
+      label: '正则表达式',
+      slug: 'CidoaBt',
+      handles: [
+        {
+          id: 'handle-top',
+          position: Position.Top,
+          type: "target",
+        },
+        {
+          id: 'handle-left',
+          position: Position.Left,
+          type: "source",
+        },
+      ]
+    },
+    position: {
+      x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
+      y: ROOT_NODE_TOP + BASIC_Y + MAIN_NODE_HEIGHT * 8
+    },
+    style: {
+      backgroundColor: MAIN_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH_MAX}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
 ]
 
 //noinspection all
 export const MODULES_EDGES = [
-    {
-        id: 'e4-4a',
-        source: '4a',
-        target: '4',
-        targetHandle: 'left25',
-    },
-    {
-        id: 'e4-4b',
-        source: '4b',
-        target: '4',
-        targetHandle: 'right25',
-    },
-    {
-        id: 'e8-9',
-        source: '8',
-        target: '9',
-        sourcetHandle: 'handle-left',
-        targetHandle: 'handle-right',
-        animated: true,
-        type: 'smoothstep'
-    },
+  {
+    id: 'm3sCV7-OPbDjGD',
+    source: 'OPbDjGD',
+    target: 'm3sCV7',
+    targetHandle: 'left25',
+  },
+  {
+    id: 'm3sCV7-iuauDp',
+    source: 'iuauDp',
+    target: 'm3sCV7',
+    targetHandle: 'right25',
+  },
+  {
+    id: 'm3sCV7-51DBUJ9T',
+    source: 'm3sCV7',
+    target: '51DBUJ9T',
+    targetHandle: 'handle-top',
+    animated: true,
+  },
+  {
+    id: '51DBUJ9T-3jxo5N6',
+    source: '51DBUJ9T',
+    target: '3jxo5N6',
+    targetHandle: 'handle-top',
+    animated: true,
+  },
+  {
+    id: '3jxo5N6-k2yAMO',
+    source: '3jxo5N6',
+    target: 'k2yAMO',
+    targetHandle: 'handle-top',
+    animated: true,
+  },
+  {
+    id: 'k2yAMO-CidoaBt',
+    source: 'k2yAMO',
+    target: 'CidoaBt',
+    targetHandle: 'handle-top',
+    animated: true,
+  },
+  {
+    id: 'CidoaBt-Eb5dfJ',
+    source: 'CidoaBt',
+    target: 'Eb5dfJ',
+    sourcetHandle: 'handle-left',
+    targetHandle: 'handle-right',
+    animated: true,
+    type: 'smoothstep'
+  },
 ]

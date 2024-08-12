@@ -1,9 +1,9 @@
 import {Position} from '@vue-flow/core'
 import {
-    MAIN_NODE_HEIGHT,
-    MAIN_NODE_WIDTH,
-    NODE_MARGIN,
-    SECOND_LEVEL_NODE_COLOR
+  MAIN_NODE_HEIGHT,
+  MAIN_NODE_WIDTH,
+  NODE_MARGIN,
+  SECOND_LEVEL_NODE_COLOR
 } from "../constant";
 import {MAIN_NODE_COLOR} from "../constant";
 
@@ -12,143 +12,166 @@ const BASIC_Y = 400
 
 // 数据结构与算法学习
 export const DATA_STRUCTURE = [
-    {
-        id: '3',
-        type: 'points',
-        position: {
-            x: BASIC_X,
-            y: BASIC_Y
+  {
+    id: 'VPke7ElM8',
+    type: 'points',
+    data: {
+      label: '数据结构与算法',
+      slug: 'VPke7ElM8',
+      handles: [
+        {
+          id: 'handle-right',
+          position: Position.Right,
+          type: "source",
         },
-        style: {backgroundColor: MAIN_NODE_COLOR, width: `${MAIN_NODE_WIDTH}px`},
-        data: {
-            label: '数据结构与算法',
-            url:'/roadmap/Python/basic.html',
-            handles: [
-                {
-                    id: 'handle-left',
-                    position: Position.Left,
-                    type: "target",
-                },
-                {
-                    id: 'handle-right',
-                    position: Position.Right,
-                    type: "source",
-                },
-                {
-                    id: 'handle-top',
-                    position: Position.Top,
-                    type: "target",
-                },
-                {
-                    id: 'handle-b',
-                    position: Position.Bottom,
-                    type: "source",
-                },
-            ]
-        }
+        {
+          id: 'handle-top',
+          position: Position.Top,
+          type: "target",
+        },
+        {
+          id: 'handle-b',
+          position: Position.Bottom,
+          type: "source",
+        },
+      ]
     },
-    {
-        id: '3a',
-        type: 'input',
-        data: {label: '数组和链表'},
-        position: {
-            x: BASIC_X,
-            y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN
-        },
-        style: {
-            backgroundColor: SECOND_LEVEL_NODE_COLOR,
-            width: `${MAIN_NODE_WIDTH}px`,
-            height: `${MAIN_NODE_HEIGHT}px`
-        },
+    position: {
+      x: BASIC_X,
+      y: BASIC_Y
     },
-    {
-        id: '3b',
-        type: 'input',
-        data: {label: '哈希表'},
-        position: {
-            x: BASIC_X,
-            y: BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN * 2
-        },
-        style: {
-            backgroundColor: SECOND_LEVEL_NODE_COLOR,
-            width: `${MAIN_NODE_WIDTH}px`,
-            height: `${MAIN_NODE_HEIGHT}px`
-        },
+    style: {
+      backgroundColor: MAIN_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`
     },
-    {
-        id: '3c',
-        type: 'input',
-        data: {label: '堆、堆栈和队列'},
-        position: {
-            x: BASIC_X,
-            y: BASIC_Y + MAIN_NODE_HEIGHT * 4 + NODE_MARGIN * 3
+  },
+  {
+    id: 'jx99DF',
+    type: 'points',
+    data: {
+      label: '数组和链表',
+      slug: 'jx99DF',
+      handles: [
+        {
+          id: 'handle-top',
+          position: Position.Top,
+          type: "target",
         },
-        style: {
-            backgroundColor: SECOND_LEVEL_NODE_COLOR,
-            width: `${MAIN_NODE_WIDTH}px`,
-            height: `${MAIN_NODE_HEIGHT}px`
-        },
+      ]
     },
-    {
-        id: '3d',
-        type: 'input',
-        data: {label: '二叉搜索树'},
-        position: {
-            x: BASIC_X,
-            y: BASIC_Y + MAIN_NODE_HEIGHT * 5 + NODE_MARGIN * 4
-        },
-        style: {
-            backgroundColor: SECOND_LEVEL_NODE_COLOR,
-            width: `${MAIN_NODE_WIDTH}px`,
-            height: `${MAIN_NODE_HEIGHT}px`
-        },
+    position: {
+      x: BASIC_X,
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN
     },
-    {
-        id: '3e',
-        type: 'input',
-        data: {label: '递归'},
-        position: {
-            x: BASIC_X,
-            y: BASIC_Y + MAIN_NODE_HEIGHT * 6 + NODE_MARGIN * 5
-        },
-        style: {
-            backgroundColor: SECOND_LEVEL_NODE_COLOR,
-            width: `${MAIN_NODE_WIDTH}px`,
-            height: `${MAIN_NODE_HEIGHT}px`
-        },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
     },
-    {
-        id: '3f',
-        type: 'input',
-        data: {label: '排序算法'},
-        position: {
-            x: BASIC_X,
-            y: BASIC_Y + MAIN_NODE_HEIGHT * 7 + NODE_MARGIN * 6
-        },
-        style: {
-            backgroundColor: SECOND_LEVEL_NODE_COLOR,
-            width: `${MAIN_NODE_WIDTH}px`,
-            height: `${MAIN_NODE_HEIGHT}px`
-        },
+  },
+  {
+    id: 'MwhTzK',
+    type: 'points',
+    data: {
+      label: '哈希表',
+      slug: 'MwhTzK',
     },
+    position: {
+      x: BASIC_X,
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN * 2
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
+  {
+    id: 'wOp9lT3',
+    type: 'points',
+    data: {
+      label: '堆、堆栈和队列',
+      slug: 'wOp9lT3',
+    },
+    position: {
+      x: BASIC_X,
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 4 + NODE_MARGIN * 3
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
+  {
+    id: 'LYiWXfj',
+    type: 'points',
+    data: {
+      label: '二叉搜索树',
+      slug: 'LYiWXfj',
+    },
+    position: {
+      x: BASIC_X,
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 5 + NODE_MARGIN * 4
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
+  {
+    id: 'MokKT7',
+    type: 'points',
+    data: {
+      label: '递归',
+      slug: 'MokKT7'
+    },
+    position: {
+      x: BASIC_X,
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 6 + NODE_MARGIN * 5
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
+  {
+    id: 'EjAgP7',
+    type: 'points',
+    data: {
+      label: '排序算法',
+      slug: 'EjAgP7'
+    },
+    position: {
+      x: BASIC_X,
+      y: BASIC_Y + MAIN_NODE_HEIGHT * 7 + NODE_MARGIN * 6
+    },
+    style: {
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      width: `${MAIN_NODE_WIDTH}px`,
+      height: `${MAIN_NODE_HEIGHT}px`
+    },
+  },
 ]
 
 //noinspection all
 export const DATA_STRUCTURE_EDGES = [
-    {
-        id: 'e3-3a',
-        source: '3',
-        target: '3a',
-        sourceHandle: 'handle-bottom',
-        targetHandle: 'handle-top'
-    },
-    {
-        id: 'e3-4',
-        source: '3',
-        target: '4',
-        sourceHandle: 'handle-right',
-        targetHandle: 'handle-left',
-        animated: true,
-        type: 'smoothstep'
-    },
+  {
+    id: 'VPke7ElM8-jx99DF',
+    source: 'VPke7ElM8',
+    target: 'jx99DF',
+    sourceHandle: 'handle-bottom',
+    targetHandle: 'handle-top'
+  },
+  {
+    id: 'VPke7ElM8-m3sCV7',
+    source: 'VPke7ElM8',
+    target: 'm3sCV7',
+    sourceHandle: 'handle-right',
+    targetHandle: 'handle-left',
+    animated: true,
+    type: 'smoothstep'
+  },
 ]

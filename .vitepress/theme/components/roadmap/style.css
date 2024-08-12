@@ -1,3 +1,37 @@
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/core@1.39.1/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/core@1.39.1/dist/theme-default.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/controls@latest/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/minimap@latest/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/node-resizer@latest/dist/style.css';
+
+.vue-flow {
+  height: 1500px !important;
+}
+
+.vue-flow__node-points {
+  padding: 10px;
+  border-radius: 3px;
+  width: 150px;
+  font-size: 12px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  color: var(--vf-node-text);
+  background-color: var(--vf-node-bg);
+}
+
+.vue-flow__node-points .vue-flow__handle[data-handleid=left25] {
+  left:24%
+}
+
+.vue-flow__node-points .vue-flow__handle[data-handleid=right25] {
+  left:76%
+}
+
+.vue-flow__node-operator .vue-flow__handle {
+  background-color:red
+}
+
 .vue-flow__node.draggable {
   cursor: pointer;
 }

@@ -364,9 +364,9 @@ export const BASIC_NODE_EDGES = [
     targetHandle: 'handle-right'
   },
   {
-    id: 'XvJ1wCns-3',
+    id: 'XvJ1wCns-VPke7ElM8',
     source: 'XvJ1wCns',
-    target: '3',
+    target: 'VPke7ElM8',
     sourceHandle: 'handle-bottom',
     targetHandle: 'handle-top',
     animated: true,

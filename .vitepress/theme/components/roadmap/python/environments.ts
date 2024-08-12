@@ -4,8 +4,12 @@ const BASIC_Y = 700
 
 export const ENVIRONMENTS_NODE = [
     {
-        id: 'env',
-        data: {label: '虚拟环境'},
+        id: 'HpiMzOB',
+        type: 'points',
+        data: {
+            label: '虚拟环境',
+            slug: 'HpiMzOB'
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y
@@ -17,10 +21,14 @@ export const ENVIRONMENTS_NODE = [
         },
     },
     {
-        id: 'env1',
-        data: {label: 'virutalenv'},
+        id: 'o41kvs',
+        type: 'points',
+        data: {
+            label: 'virutalenv',
+            slug: 'o41kvs'
+        },
         position: {x: NODE_LEFT, y: MAIN_NODE_HEIGHT},
-        parentNode: 'env',
+        parentNode: 'HpiMzOB',
         style: {
             backgroundColor: SECOND_LEVEL_NODE_COLOR,
             width: `${MAIN_NODE_WIDTH * 4 / 5}px`,
@@ -28,10 +36,14 @@ export const ENVIRONMENTS_NODE = [
         },
     },
     {
-        id: 'env2',
-        data: {label: 'Pipenv'},
+        id: '5nvTeG19',
+        type: 'points',
+        data: {
+            label: 'Pipenv',
+            slug: '5nvTeG19'
+        },
         position: {x: NODE_LEFT, y: 110},
-        parentNode: 'env',
+        parentNode: 'HpiMzOB',
         style: {
             backgroundColor: SECOND_LEVEL_NODE_COLOR,
             width: `${MAIN_NODE_WIDTH * 2 / 5 -2}px`,
@@ -39,10 +51,14 @@ export const ENVIRONMENTS_NODE = [
         },
     },
     {
-        id: 'env3',
-        data: {label: 'pyenv'},
+        id: 'zdmi8hA',
+        type: 'points',
+        data: {
+            label: 'pyenv',
+            slug: 'zdmi8hA'
+        },
         position: {x: MAIN_NODE_WIDTH * 2 / 5 + NODE_LEFT + 2, y: 110},
-        parentNode: 'env',
+        parentNode: 'HpiMzOB',
         style: {
             backgroundColor: SECOND_LEVEL_NODE_COLOR,
             width: `${MAIN_NODE_WIDTH * 2 / 5 - 2}px`,
