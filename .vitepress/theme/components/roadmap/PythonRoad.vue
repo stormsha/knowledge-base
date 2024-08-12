@@ -1,6 +1,6 @@
 <script setup>
 import {ref} from 'vue'
-import {NODES, EDGES} from "./python/data.js";
+import {NODES, EDGES} from "./python/data";
 import {Handle, VueFlow} from "@vue-flow/core";
 import './style.css'
 
@@ -26,7 +26,12 @@ const triggerModal = (slug) => {
       :max-zoom="1"
   >
     <template #node-points="props">
-      <div class="node-btn" @click="triggerModal(props.data.slug)">{{props.data.label}}</div>
+      <div
+          class="node-btn"
+          @click="triggerModal(props.data.slug)"
+      >
+        {{ props.data.label }}
+      </div>
       <Handle
           v-if="'handles' in props.data"
           v-for="handle in props.data.handles"
