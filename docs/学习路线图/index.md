@@ -4,4 +4,4 @@
 
 [java](/roadmap/java.md)
 
-[python](/roadmap/python.md)
+[python](/python/intro.md)

@@ -2,7 +2,7 @@
 
 import {ref} from 'vue';
 
-import { data as posts } from './Python/python.data.ts';
+import { data as posts } from './python.data.ts';
 
 const htmlContent = ref('');
 const dialogRef = ref('');
