@@ -11,6 +11,7 @@ import {
 
 const BASIC_Y = 425
 
+//noinspection all
 export const MODULES_NODE = [
   {
     id: 'm3sCV7',
@@ -106,18 +107,6 @@ export const MODULES_NODE = [
     data: {
       label: '匿名函数',
       slug: '51DBUJ9T',
-      handles: [
-        {
-          id: 'handle-top',
-          position: Position.Bottom,
-          type: "target",
-        },
-        {
-          id: 'handle-bottom',
-          position: Position.Bottom,
-          type: "source",
-        },
-      ]
     },
     position: {
       x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
@@ -136,18 +125,6 @@ export const MODULES_NODE = [
     data: {
       label: '装饰器',
       slug: '3jxo5N6',
-      handles: [
-        {
-          id: 'handle-top',
-          position: Position.Bottom,
-          type: "target",
-        },
-        {
-          id: 'handle-bottom',
-          position: Position.Bottom,
-          type: "source",
-        },
-      ]
     },
     position: {
       x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
@@ -162,18 +139,6 @@ export const MODULES_NODE = [
     data: {
       label: '迭代器',
       slug: 'k2yAMO',
-      handles: [
-        {
-          id: 'handle-top',
-          position: Position.Top,
-          type: "target",
-        },
-        {
-          id: 'handle-bottom',
-          position: Position.Bottom,
-          type: "source",
-        },
-      ]
     },
     position: {
       x: 20 + MAIN_NODE_WIDTH * 2 + BASIC_W * 2,
@@ -232,29 +197,8 @@ export const MODULES_EDGES = [
     targetHandle: 'right25',
   },
   {
-    id: 'm3sCV7-51DBUJ9T',
+    id: 'm3sCV7-CidoaBt',
     source: 'm3sCV7',
-    target: '51DBUJ9T',
-    targetHandle: 'handle-top',
-    animated: true,
-  },
-  {
-    id: '51DBUJ9T-3jxo5N6',
-    source: '51DBUJ9T',
-    target: '3jxo5N6',
-    targetHandle: 'handle-top',
-    animated: true,
-  },
-  {
-    id: '3jxo5N6-k2yAMO',
-    source: '3jxo5N6',
-    target: 'k2yAMO',
-    targetHandle: 'handle-top',
-    animated: true,
-  },
-  {
-    id: 'k2yAMO-CidoaBt',
-    source: 'k2yAMO',
     target: 'CidoaBt',
     targetHandle: 'handle-top',
     animated: true,

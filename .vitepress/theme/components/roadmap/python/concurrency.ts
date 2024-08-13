@@ -127,9 +127,9 @@ export const CONCURRENCY_EDGES = [
         sourceHandle: 'handle-bottom',
     },
     {
-        id: '2gLgd1r-16',
+        id: '2gLgd1r-4Jn2cd',
         source: '2gLgd1r',
-        target: '16',
+        target: '4Jn2cd',
         sourceHandle: 'handle-right',
         targetHandle: 'handle-left',
         animated: true,

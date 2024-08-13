@@ -26,7 +26,8 @@ const hideModal = () => {
 <style src="../styles/roadmap.scss"></style>
 
 
----
+<PythonRoad @trigger="showModal"></PythonRoad>
+
 
 <dialog ref="dialogRef" class="roadmap-dialog">
     <PostOverview
@@ -34,10 +35,5 @@ const hideModal = () => {
         @close-modal="hideModal">
     </PostOverview>
 </dialog>
-
----
-
-
-<PythonRoad @trigger="showModal"></PythonRoad>
 
 

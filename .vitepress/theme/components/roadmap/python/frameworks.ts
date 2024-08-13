@@ -4,11 +4,13 @@ import {
   MAIN_NODE_COLOR,
   MAIN_NODE_HEIGHT,
   MAIN_NODE_WIDTH,
-  NODE_LEFT, NODE_MARGIN,
+  NODE_LEFT, NODE_MARGIN, ROOT_NODE_TOP,
   SECOND_LEVEL_NODE_COLOR,
 } from "../constant";
 
-const BASIC_Y = 1100
+const BASIC_Y = 850
+
+const color = "#ffffff"
 
 export const FRAMEWORKS_NODE = [
   {
@@ -37,7 +39,7 @@ export const FRAMEWORKS_NODE = [
     },
     position: {
       x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W / 2,
-      y: BASIC_Y
+      y: BASIC_Y + MAIN_NODE_WIDTH
     },
     style: {
       backgroundColor: MAIN_NODE_COLOR,
@@ -60,10 +62,10 @@ export const FRAMEWORKS_NODE = [
     },
     position: {
       x: NODE_LEFT + MAIN_NODE_WIDTH * 2 + BASIC_W + 10,
-      y: 900
+      y: ROOT_NODE_TOP + BASIC_Y
     },
     style: {
-      backgroundColor: "#ffffff",
+      backgroundColor: SECOND_LEVEL_NODE_COLOR,
       width: `${BASIC_W * 3 + 20}px`,
       height: `${MAIN_NODE_WIDTH}px`
     },
@@ -81,7 +83,7 @@ export const FRAMEWORKS_NODE = [
       y: 40
     },
     style: {
-      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      backgroundColor: color,
       width: `${BASIC_W - 5}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
@@ -99,7 +101,7 @@ export const FRAMEWORKS_NODE = [
       y: 40
     },
     style: {
-      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      backgroundColor: color,
       width: `${BASIC_W - 5}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
@@ -117,7 +119,7 @@ export const FRAMEWORKS_NODE = [
       y: 40
     },
     style: {
-      backgroundColor: SECOND_LEVEL_NODE_COLOR,
+      backgroundColor: color,
       width: `${BASIC_W - 5}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
@@ -134,9 +136,9 @@ export const FRAMEWORKS_NODE = [
       y: 90
     },
     style: {
-      backgroundColor: "#ffffff",
+      backgroundColor: color,
       width: `${BASIC_W - NODE_MARGIN}px`,
-      height: `${BASIC_W}px`
+      height: `${BASIC_W + 20}px`
     },
   },
   {
@@ -151,9 +153,9 @@ export const FRAMEWORKS_NODE = [
       y: 90
     },
     style: {
-      backgroundColor: "#ffffff",
+      backgroundColor: color,
       width: `${BASIC_W * 2}px`,
-      height: `${BASIC_W}px`
+      height: `${BASIC_W + 20}px`
     },
   },
   {
@@ -166,11 +168,11 @@ export const FRAMEWORKS_NODE = [
     },
     position: {
       x: 10,
-      y: 40
+      y: 90
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
-      width: `${BASIC_W - NODE_MARGIN * 2}px`,
+      width: `${BASIC_W - 25}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
   },
@@ -188,7 +190,7 @@ export const FRAMEWORKS_NODE = [
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
-      width: `${BASIC_W - 5}px`,
+      width: `${BASIC_W - 25}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
   },
@@ -206,7 +208,7 @@ export const FRAMEWORKS_NODE = [
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
-      width: `${BASIC_W - 5}px`,
+      width: `${BASIC_W - 15}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
   },
@@ -219,12 +221,12 @@ export const FRAMEWORKS_NODE = [
       slug: 'Ip5SbcK',
     },
     position: {
-      x: 10,
+      x: BASIC_W + 5,
       y: 40
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
-      width: `${BASIC_W - 5}px`,
+      width: `${BASIC_W - 15}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
   },
@@ -237,12 +239,12 @@ export const FRAMEWORKS_NODE = [
       slug: 'mCIwGK',
     },
     position: {
-      x: 10,
-      y: 40
+      x: BASIC_W + 5,
+      y: 90
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
-      width: `${BASIC_W - 5}px`,
+      width: `${BASIC_W - 15}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
   },
@@ -256,11 +258,11 @@ export const FRAMEWORKS_NODE = [
     },
     position: {
       x: 10,
-      y: 40
+      y: 90
     },
     style: {
       backgroundColor: SECOND_LEVEL_NODE_COLOR,
-      width: `${BASIC_W - 5}px`,
+      width: `${BASIC_W - 15}px`,
       height: `${MAIN_NODE_HEIGHT}px`
     },
   },

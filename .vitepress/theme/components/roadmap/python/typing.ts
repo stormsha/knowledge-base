@@ -4,7 +4,7 @@ import {
   MAIN_NODE_COLOR,
   MAIN_NODE_HEIGHT,
   MAIN_NODE_WIDTH,
-  NODE_LEFT, NODE_MARGIN,
+  NODE_LEFT, NODE_MARGIN, ROOT_NODE_TOP,
   SECOND_LEVEL_NODE_COLOR
 } from "../constant";
 
@@ -39,7 +39,7 @@ export const TYPING_NODE = [
     },
     position: {
       x: NODE_LEFT + MAIN_NODE_WIDTH + BASIC_W / 2,
-      y: BASIC_Y
+      y: ROOT_NODE_TOP + BASIC_Y
     },
     style: {
       backgroundColor: MAIN_NODE_COLOR,
