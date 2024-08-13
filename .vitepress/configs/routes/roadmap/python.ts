@@ -43,4 +43,13 @@ export default {
   '学习路线图/Python/11.1.虚拟环境@virutalenv.md': 'roadmap/python/virutalenv.md',
   '学习路线图/Python/11.2.虚拟环境@Pipenv.md': 'roadmap/python/pipenv.md',
   '学习路线图/Python/11.3.虚拟环境@pyenv.md': 'roadmap/python/pyenv.md',
+  '学习路线图/Python/12.列表推导式.md': 'roadmap/python/list_comprehensions.md',
+  '学习路线图/Python/13.生成器表达式.md': 'roadmap/python/generator_expressions.md',
+  '学习路线图/Python/14.范式.md': 'roadmap/python/paradigms.md',
+  '学习路线图/Python/15.上下文管理器.md': 'roadmap/python/context_manager.md',
+  '学习路线图/Python/16.并发编程.md': 'roadmap/python/concurrency.md',
+  '学习路线图/Python/16.1.多进程.md': 'roadmap/python/multiprocessing.md',
+  '学习路线图/Python/16.2.协程.md': 'roadmap/python/asynchrony.md',
+  '学习路线图/Python/16.3.多线程.md': 'roadmap/python/threading.md',
+  '学习路线图/Python/16.4.全局解释器.md': 'roadmap/python/gil.md',
 }

@@ -10,11 +10,11 @@ const BASIC_Y = 1140
 
 export const CONCURRENCY_NODE = [
     {
-        id: '15',
+        id: '2gLgd1r',
         type: 'points',
         data: {
             label: '并发编程',
-            slug: "2yHvu1",
+            slug: "2gLgd1r",
             handles: [
                 {
                     id: 'handle-left',
@@ -49,8 +49,12 @@ export const CONCURRENCY_NODE = [
         },
     },
     {
-        id: '15a',
-        data: {label: '多进程'},
+        id: '4WDvv7',
+        type: 'points',
+        data: {
+            label: '多进程',
+            slug: "4WDvv7",
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN
@@ -62,8 +66,12 @@ export const CONCURRENCY_NODE = [
         },
     },
     {
-        id: '15b',
-        data: {label: '携程'},
+        id: '1RJJ5G',
+        type: 'points',
+        data: {
+            label: '携程',
+            slug: "1RJJ5G",
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN * 2
@@ -75,8 +83,12 @@ export const CONCURRENCY_NODE = [
         },
     },
     {
-        id: '15c',
-        data: {label: '多线程'},
+        id: 'DceBgz',
+        type: 'points',
+        data: {
+            label: '多线程',
+            slug: "DceBgz",
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 4 + NODE_MARGIN * 3
@@ -88,8 +100,12 @@ export const CONCURRENCY_NODE = [
         },
     },
     {
-        id: '15d',
-        data: {label: '全局解释器锁 (GIL)'},
+        id: 'SyC7SO6',
+        type: 'points',
+        data: {
+            label: '全局解释器锁 (GIL)',
+            slug: "SyC7SO6",
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 5 + NODE_MARGIN * 4
@@ -105,18 +121,18 @@ export const CONCURRENCY_NODE = [
 //noinspection all
 export const CONCURRENCY_EDGES = [
     {
-        id: 'e15-16',
-        source: '15',
+        id: '2gLgd1r-4WDvv7',
+        source: '2gLgd1r',
+        target: '4WDvv7',
+        sourceHandle: 'handle-bottom',
+    },
+    {
+        id: '2gLgd1r-16',
+        source: '2gLgd1r',
         target: '16',
         sourceHandle: 'handle-right',
         targetHandle: 'handle-left',
         animated: true,
         type: 'smoothstep',
-    },
-    {
-        id: 'e15-15a',
-        source: '15',
-        target: '15a',
-        sourceHandle: 'handle-bottom',
     },
 ]

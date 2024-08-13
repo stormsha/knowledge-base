@@ -6,7 +6,7 @@ import {OBJECT_EDGES, OBJECT_NODE} from "./object";
 import {PACKAGE_EDGES, PACKAGE_NODE} from "./package";
 import {ADVANCED_EDGES, ADVANCED_NODE} from "./advanced";
 import {FRAMEWORKS_EDGES, FRAMEWORKS_NODE} from "./frameworks";
-import {ENVIRONMENTS_NODE} from "./environments";
+import {ENVIRONMENTS_EDGES, ENVIRONMENTS_NODE} from "./environments";
 import {CONCURRENCY_EDGES, CONCURRENCY_NODE} from "./concurrency";
 import {TYPING_EDGES, TYPING_NODE} from "./typing";
 import {TEST_EDGES, TEST_NODE} from "./test";
@@ -36,6 +36,7 @@ export const EDGES = [
   ...MODULES_EDGES, // 模块路径
   ...OBJECT_EDGES, // 面向对象编程路径
   ...PACKAGE_EDGES, // 包管理路径
+  ...ENVIRONMENTS_EDGES, // 虚拟环境路径
   ...ADVANCED_EDGES, // 进阶路径
   ...CONCURRENCY_EDGES, // 并发编程路径
   ...FRAMEWORKS_EDGES, // 框架理路径

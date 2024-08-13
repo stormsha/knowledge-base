@@ -10,8 +10,12 @@ const BASIC_Y = 920
 
 export const ADVANCED_NODE = [
     {
-        id: '11',
-        data: {label: '列表推导式'},
+        id: 'm4GRVc',
+        type: 'points',
+        data: {
+            label: '列表推导式',
+            slug: 'm4GRVc'
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y
@@ -23,8 +27,12 @@ export const ADVANCED_NODE = [
         },
     },
     {
-        id: '12',
-        data: {label: '生成器表达式'},
+        id: 'cYtrM6',
+        type: 'points',
+        data: {
+            label: '生成器表达式',
+            slug: 'cYtrM6'
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT + NODE_MARGIN
@@ -36,8 +44,12 @@ export const ADVANCED_NODE = [
         },
     },
     {
-        id: '13',
-        data: {label: '范式'},
+        id: 'mKI3gUL',
+        type: 'points',
+        data: {
+            label: '范式',
+            slug: 'mKI3gUL'
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 2 + NODE_MARGIN * 2
@@ -49,8 +61,12 @@ export const ADVANCED_NODE = [
         },
     },
     {
-        id: '14',
-        data: {label: '上下文管理器'},
+        id: 'YkYr12',
+        type: 'points',
+        data: {
+            label: '上下文管理器',
+            slug: 'YkYr12'
+        },
         position: {
             x: NODE_LEFT,
             y: BASIC_Y + MAIN_NODE_HEIGHT * 3 + NODE_MARGIN * 3
@@ -66,9 +82,9 @@ export const ADVANCED_NODE = [
 
 export const ADVANCED_EDGES = [
     {
-        id: 'e14-15',
-        source: '14',
-        target: '15',
+        id: 'm4GRVc-2gLgd1r',
+        source: 'm4GRVc',
+        target: '2gLgd1r',
         targetHandle: 'handle-top',
         animated: true,
     },

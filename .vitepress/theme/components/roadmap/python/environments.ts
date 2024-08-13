@@ -66,3 +66,13 @@ export const ENVIRONMENTS_NODE = [
         },
     },
 ]
+
+export const ENVIRONMENTS_EDGES = [
+    {
+        id: 'HpiMzOB-m4GRVc',
+        source: 'HpiMzOB',
+        target: 'm4GRVc',
+        targetHandle: 'handle-top',
+        animated: true,
+    },
+]
