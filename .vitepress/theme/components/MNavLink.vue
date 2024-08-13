@@ -3,13 +3,13 @@ import { computed } from 'vue'
 import { withBase } from 'vitepress'
 import {slugify} from "@mdit-vue/shared";
 
-import { NavLink } from '../types'
+import { NAV_LINK } from '../types'
 
 const props = defineProps<{
-  icon?: NavLink['icon']
-  title?: NavLink['title']
-  desc?: NavLink['desc']
-  link: NavLink['link']
+  icon?: NAV_LINK['icon']
+  title?: NAV_LINK['title']
+  desc?: NAV_LINK['desc']
+  link: NAV_LINK['link']
 }>()
 
 const formatTitle = computed(() => {

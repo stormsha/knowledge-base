@@ -1,7 +1,21 @@
-# 自学路线图
+---
+layoutClass: m-nav-layout
+---
 
-[go](/roadmap/go.md)
+<script setup>
+import { ROADMAP_DATA } from './data'
+</script>
+<style src="../styles/index.scss"></style>
 
-[java](/roadmap/java.md)
+# 编程学习
 
-[python](/python/intro.md)
+<div class="m-nav-links">
+<MNavLink
+  v-for="{ icon, title, desc, link } in ROADMAP_DATA"
+  :key="link"
+  :icon="icon"
+  :title="title"
+  :desc="desc"
+  :link="link"
+/>
+</div>

@@ -16,6 +16,7 @@ import HeroImage from "./components/HeroImage.vue";
 import './styles/index.css'
 import RoadMap from "./components/RoadMap.vue";
 import MNavLinks from "./components/MNavLinks.vue";
+import MNavLink from "./components/MNavLink.vue";
 import PythonRoad from "./components/roadmap/PythonRoad.vue";
 import PostOverview from "./components/PostOverview.vue";
 
@@ -68,6 +69,7 @@ export default {
             },
         } as Options)
         app.component('MNavLinks', MNavLinks)
+        app.component('MNavLink', MNavLink)
         app.component('RoadMap', RoadMap)
         app.component('PythonRoad', PythonRoad)
         app.component('PostOverview', PostOverview)
