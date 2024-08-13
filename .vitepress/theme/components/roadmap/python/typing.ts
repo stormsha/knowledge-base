@@ -141,6 +141,8 @@ export const TYPING_NODE = [
   },
 ]
 
+
+//noinspection all
 export const TYPING_EDGES = [
   {
     id: 'mwfviW-BzFCDm',
@@ -150,9 +152,9 @@ export const TYPING_EDGES = [
     targetHandle: 'handle-top',
   },
   {
-    id: 'mwfviW-18',
+    id: 'mwfviW-9gpOrWc',
     source: 'mwfviW',
-    target: '18',
+    target: '9gpOrWc',
     sourceHandle: 'handle-right',
     targetHandle: 'handle-left',
     animated: true,
