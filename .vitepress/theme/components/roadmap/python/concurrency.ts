@@ -6,7 +6,7 @@ import {
     NODE_LEFT, NODE_MARGIN, SECOND_LEVEL_NODE_COLOR,
 } from "../constant";
 
-const BASIC_Y = 1140
+const BASIC_Y = 1150
 
 export const CONCURRENCY_NODE = [
     {
