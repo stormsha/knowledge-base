@@ -8,7 +8,7 @@ import {
   SECOND_LEVEL_NODE_COLOR,
 } from "../constant";
 
-const BASIC_Y = 850
+const BASIC_Y = 870
 
 const color = "#ffffff"
 
