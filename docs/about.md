@@ -37,8 +37,7 @@ aside: false
 
 ## 工具
 
-![PyCharm](https://img.shields.io/badge/PyCharm-20d58d?logo=PyCharm&logoColor=fff)
-![GoLang](https://img.shields.io/badge/GoLang-000000?logo=GoLang&logoColor=fff)
-![WebStorm](https://img.shields.io/badge/WebStorm-000000?logo=WebStorm&logoColor=fff)
+![JetBrains](https://img.shields.io/badge/JetBrains-d329bf?logo=jetbrains&logoColor=000000)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=Git&logoColor=fff)
-![Obsidian](https://img.shields.io/badge/Obsidian-000000?logo=Obsidian&logoColor=fff)
+![Obsidian](https://img.shields.io/badge/Obsidian-000000?logo=Obsidian&logoColor=a689f7)
+
