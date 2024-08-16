@@ -13,5 +13,9 @@ export const nav: DefaultTheme.Config['nav'] = [
                 link:'/roadmap/go.md'
             }
         ]
+    },
+    {
+        text: '🎨 关于我',
+        link:'/about.md'
     }
 ]
