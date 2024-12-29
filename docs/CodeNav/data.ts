@@ -5,10 +5,10 @@ export const WIZARDS_DATA: WIZARDS[] = [
     title: '开发必备',
     items: [
       {
-        "icon": "/nav/c-runoob-logo.ico",
+        "icon": "https://tool.thax.cn/favicon.ico",
         "title": "随机字符串",
         "desc": "随机字符串生成器可以实现在线生成随机密码、随机数，通过设置小写字母(a..z)、大写字母(A..Z)、数字(0..9)、特殊字符等来随机生成你想要的一个或多个字符串。",
-        "link": "https://www.jyshare.com/front-end/9111/",
+        "link": "https://tool.thax.cn/password/",
       },
       {
         "icon": "https://www.fly63.com/favicon.ico",
