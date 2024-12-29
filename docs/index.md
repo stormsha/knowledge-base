@@ -34,4 +34,9 @@ features:
     link: /OnlineDocuments
     details: 汇总各编程语言在线技术文档，包含编程语言、框架、库、工具等相关信息的文档。
     linkText: 学习成长
+  - icon: 💻
+    title: 玩转服务器
+    link: /devops/kg7svs
+    details: 服务器知识宝库：涵盖系统管理、网络配置、安全防护及性能优化的全面资料。
+    linkText: 学习成长
 ---

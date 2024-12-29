@@ -5,6 +5,12 @@ export const WIZARDS_DATA: WIZARDS[] = [
     title: '开发必备',
     items: [
       {
+        "icon": "/nav/c-runoob-logo.ico",
+        "title": "随机字符串",
+        "desc": "随机字符串生成器可以实现在线生成随机密码、随机数，通过设置小写字母(a..z)、大写字母(A..Z)、数字(0..9)、特殊字符等来随机生成你想要的一个或多个字符串。",
+        "link": "https://www.jyshare.com/front-end/9111/",
+      },
+      {
         "icon": "https://www.fly63.com/favicon.ico",
         "title": "在线ASCII码表",
         "desc": "在线ASCII码表",
@@ -171,7 +177,7 @@ export const WIZARDS_DATA: WIZARDS[] = [
         "title": "在线文本比对",
         "desc": "在线文本比对工具",
         "link": "http://www.fly63.com/tool/textdiff/"
-      }
+      },
     ]
   },
   {
@@ -184,5 +190,5 @@ export const WIZARDS_DATA: WIZARDS[] = [
         "link": "https://www.bt.cn/new/index.html",
       }
     ]
-  }
+  },
 ]

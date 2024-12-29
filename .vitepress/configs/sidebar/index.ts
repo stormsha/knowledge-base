@@ -9,4 +9,3 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   "KnowledgePlanet": zsxq,
   "python": python,
 }
-
