@@ -4,6 +4,9 @@ layoutClass: home-layout
 aside: false
 ---
 
+<WebsiteSetupFlow/>
+
+
 <style>
 .home-layout img {
   display: inline-block;
