@@ -19,6 +19,7 @@ import MNavLink from "./components/MNavLink.vue";
 import PythonRoad from "./components/roadmap/PythonRoad.vue";
 import PostOverview from "./components/PostOverview.vue";
 import NavBarContentAfter from "./components/NavBarContentAfter.vue";
+import WebsiteSetupFlow from "./components/WebsiteSetupFlow/WebsiteSetupFlow.vue";
 
 let homeStyle: HTMLStyleElement | undefined
 
@@ -78,6 +79,7 @@ export default {
     app.component('RoadMap', RoadMap)
     app.component('PythonRoad', PythonRoad)
     app.component('PostOverview', PostOverview)
+    app.component('WebsiteSetupFlow', WebsiteSetupFlow)
     if (typeof window !== 'undefined') {
       watch(
         () => router.route.data.relativePath,
