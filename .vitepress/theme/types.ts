@@ -14,7 +14,8 @@ export interface WIZARDS {
   items: NAV_LINK[]
 }
 
-// 定义数据存储接口
-export interface DataStore {
-  data: any[] | null
+export interface Post {
+  title: string
+  url: string
+  html: string | undefined
 }

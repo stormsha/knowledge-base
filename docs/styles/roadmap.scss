@@ -1,0 +1,47 @@
+.roadmap-dialog {
+  all: unset;
+  display: block;
+  position: fixed;
+  top: var(--vp-custom-roadmap-top);
+  right: 0;
+  width: 400px; /* 可以根据需要调整宽度 */
+  height: 100%; /* 全屏高度 */
+  margin: 0;
+  border: none;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0; /* 去掉圆角 */
+
+  z-index: var(--vp-custom-roadmap-z-index);
+  background-color: var(--vp-custom-roadmap-bg);
+
+  transform: translateX(0); /* 确保它在右侧正确显示 */
+  transition: transform 0.3s ease-in-out; /* 为平滑过渡添加动画 */
+}
+
+.roadmap-dialog[open] {
+  transform: translateX(0);
+}
+
+.roadmap-dialog:not([open]) {
+  transform: translateX(100%); /* 初始状态下，隐藏在屏幕外 */
+}
+
+.dialog-content{
+  margin: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: red;
+}

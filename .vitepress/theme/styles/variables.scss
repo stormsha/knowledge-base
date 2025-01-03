@@ -22,9 +22,6 @@
 
     --vp-c-highlight-bg: var(--vp-c-brand-light);
     --vp-c-highlight-text: var(--vp-c-bg);
-
-    --vf-node-bg: #fff;
-    --vf-node-text: #222;
 }
 
 .dark {
@@ -91,11 +88,20 @@
     --vp-custom-block-tip-border: var(--vp-c-brand-1);
     --vp-custom-block-tip-text: var(--vp-c-brand-darker);
     --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+
+    --vf-node-bg: #fff;
+    --vf-node-text: #222;
+    --vp-custom-roadmap-z-index: var(--vp-z-index-nav);
+    --vp-custom-roadmap-top: var(--vp-nav-height);
+    --vp-custom-roadmap-bg: var(--vp-c-bg);
 }
 .dark {
     --vp-custom-block-tip-border: var(--vp-c-brand-1);
     --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
     --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+    --vp-custom-roadmap-z-index: var(--vp-z-index-nav);
+    --vp-custom-roadmap-top: var(--vp-nav-height);
+    --vp-custom-roadmap-bg: var(--vp-c-bg);
 }
 
 /**

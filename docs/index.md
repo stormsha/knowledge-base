@@ -8,17 +8,17 @@ hero:
   text: "个人知识库"
   tagline: 学途有径，一路同行
   actions:
-    - text: 知识星球
-      link: /KnowledgePlanet
+    - text: 在线技术文档
+      link: /OnlineDocuments
     - text: 学习路线图
       link: /roadmap
 
 features:
-  - icon: 🌏
-    title: 知识星球
-    link: /KnowledgePlanet
-    details: 编程社区
-    linkText: 学习成长
+#  - icon: 🌏
+#    title: 知识星球
+#    link: /KnowledgePlanet
+#    details: 编程社区
+#    linkText: 学习成长
   - icon: 🧭
     title: 编程导航
     link: /CodeNav
@@ -33,5 +33,10 @@ features:
     title: 在线技术文档
     link: /OnlineDocuments
     details: 汇总各编程语言在线技术文档，包含编程语言、框架、库、工具等相关信息的文档。
+    linkText: 学习成长
+  - icon: 💻
+    title: 玩转服务器
+    link: /devops/kg7svs
+    details: 服务器知识宝库：涵盖系统管理、网络配置、安全防护及性能优化的全面资料。
     linkText: 学习成长
 ---
